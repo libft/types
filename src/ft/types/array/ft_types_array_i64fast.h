@@ -18,7 +18,7 @@
 
 typedef struct s_ft_types_array_i64fast
 {
-	int_fast64_t	element;
+	int_fast64_t	*element;
 	size_t			count;
 }	t_ft_types_array_i64fast;
 

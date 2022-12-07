@@ -17,7 +17,7 @@
 
 typedef struct s_ft_types_array_long
 {
-	signed long	element;
+	signed long	*element;
 	size_t		count;
 }	t_ft_types_array_long;
 

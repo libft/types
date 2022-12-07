@@ -17,7 +17,7 @@
 
 typedef struct s_ft_types_array_ulonglong
 {
-	unsigned long long	element;
+	unsigned long long	*element;
 	size_t				count;
 }	t_ft_types_array_ulonglong;
 

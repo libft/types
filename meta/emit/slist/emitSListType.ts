@@ -4,7 +4,7 @@ import {
   headerProtectionEnd,
   headerProtectionStart,
 } from "../../common/headerProtection";
-import { includes } from "../../util/includes";
+import { includes, includesInHeader } from "../../util/includes";
 import { typedef } from "../../util/typedef";
 
 export async function emitSListType(
@@ -17,7 +17,7 @@ export async function emitSListType(
     `src/ft/types/slist/ft_types_slist_${typename}.h`,
     `${header}
 ${headerProtectionStart(`ft_types_slist_${typename}`)}
-${includes("<stddef.h>", ...dependencies)}
+${includesInHeader("<stddef.h>", ...dependencies)}
 
 ${typedef(`ft_types_slist_${typename}_node`, [
   { type: `struct s_ft_types_slist_${typename}`, name: "*next" },

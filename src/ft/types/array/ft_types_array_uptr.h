@@ -18,7 +18,7 @@
 
 typedef struct s_ft_types_array_uptr
 {
-	uintptr_t	element;
+	uintptr_t	*element;
 	size_t		count;
 }	t_ft_types_array_uptr;
 

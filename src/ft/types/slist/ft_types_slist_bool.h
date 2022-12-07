@@ -13,8 +13,8 @@
 #ifndef FT_TYPES_SLIST_BOOL_H
 # define FT_TYPES_SLIST_BOOL_H
 
-# include <stddef.h>
 # include <stdbool.h>
+# include <stddef.h>
 
 typedef struct s_ft_types_slist_bool_node
 {

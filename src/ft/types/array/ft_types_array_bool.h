@@ -13,12 +13,12 @@
 #ifndef FT_TYPES_ARRAY_BOOL_H
 # define FT_TYPES_ARRAY_BOOL_H
 
-# include <stddef.h>
 # include <stdbool.h>
+# include <stddef.h>
 
 typedef struct s_ft_types_array_bool
 {
-	bool	element;
+	bool	*element;
 	size_t	count;
 }	t_ft_types_array_bool;
 

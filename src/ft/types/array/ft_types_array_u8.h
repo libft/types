@@ -18,7 +18,7 @@
 
 typedef struct s_ft_types_array_u8
 {
-	uint8_t	element;
+	uint8_t	*element;
 	size_t	count;
 }	t_ft_types_array_u8;
 

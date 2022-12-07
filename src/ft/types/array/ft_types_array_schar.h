@@ -17,7 +17,7 @@
 
 typedef struct s_ft_types_array_schar
 {
-	signed char	element;
+	signed char	*element;
 	size_t		count;
 }	t_ft_types_array_schar;
 

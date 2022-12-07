@@ -17,7 +17,7 @@
 
 typedef struct s_ft_types_array_double
 {
-	double	element;
+	double	*element;
 	size_t	count;
 }	t_ft_types_array_double;
 

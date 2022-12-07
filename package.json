@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "ts-node meta"
+    "start": "rimraf src && cp-cli public src && ts-node meta"
   },
   "repository": {
     "type": "git",
@@ -10,7 +10,10 @@
   "license": "UNLICENSED",
   "dependencies": {
     "@types/node": "^18.11.10",
+    "cp-cli": "^2.0.0",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
+    "tslib": "^2.4.1",
     "typescript": "^4.9.3"
   }
 }

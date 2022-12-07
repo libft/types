@@ -4,8 +4,9 @@ import {
   headerProtectionEnd,
   headerProtectionStart,
 } from "../../common/headerProtection";
-import { includes } from "../../util/includes";
+import { includes, includesInHeader } from "../../util/includes";
 import { typedef } from "../../util/typedef";
+import { variableDecls } from "../../util/variableDecls";
 
 async function emitTypes(
   typename: string,
@@ -17,10 +18,10 @@ async function emitTypes(
     `src/ft/types/array/ft_types_array_${typename}.h`,
     `${header}
 ${headerProtectionStart(`ft_types_array_${typename}`)}
-${includes("<stddef.h>", ...dependencies)}
+${includesInHeader("<stddef.h>", ...dependencies)}
 
 ${typedef(`ft_types_array_${typename}`, [
-  { type: originalType, name: "element" },
+  { type: originalType, name: "*element" },
   { type: "size_t", name: "count" },
 ])}
 

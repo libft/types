@@ -18,7 +18,7 @@
 
 typedef struct s_ft_types_array_u32fast
 {
-	uint_fast32_t	element;
+	uint_fast32_t	*element;
 	size_t			count;
 }	t_ft_types_array_u32fast;
 

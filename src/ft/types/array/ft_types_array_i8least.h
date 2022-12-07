@@ -18,7 +18,7 @@
 
 typedef struct s_ft_types_array_i8least
 {
-	int_least8_t	element;
+	int_least8_t	*element;
 	size_t			count;
 }	t_ft_types_array_i8least;
 

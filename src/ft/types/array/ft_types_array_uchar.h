@@ -17,7 +17,7 @@
 
 typedef struct s_ft_types_array_uchar
 {
-	unsigned char	element;
+	unsigned char	*element;
 	size_t			count;
 }	t_ft_types_array_uchar;
 

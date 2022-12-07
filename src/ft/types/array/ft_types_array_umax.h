@@ -18,7 +18,7 @@
 
 typedef struct s_ft_types_array_umax
 {
-	uintmax_t	element;
+	uintmax_t	*element;
 	size_t		count;
 }	t_ft_types_array_umax;
 

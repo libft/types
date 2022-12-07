@@ -18,7 +18,7 @@
 
 typedef struct s_ft_types_array_u64least
 {
-	uint_least64_t	element;
+	uint_least64_t	*element;
 	size_t			count;
 }	t_ft_types_array_u64least;
 

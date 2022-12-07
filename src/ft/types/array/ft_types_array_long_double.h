@@ -17,7 +17,7 @@
 
 typedef struct s_ft_types_array_long_double
 {
-	long double	element;
+	long double	*element;
 	size_t		count;
 }	t_ft_types_array_long_double;
 

@@ -17,7 +17,7 @@
 
 typedef struct s_ft_types_array_short
 {
-	signed short	element;
+	signed short	*element;
 	size_t			count;
 }	t_ft_types_array_short;
 
