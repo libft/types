@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_TYPES_ARRAY_SIGNED_INT_H
-# define FT_TYPES_ARRAY_SIGNED_INT_H
+#ifndef FT_TYPES_ARRAY_UCHAR_H
+# define FT_TYPES_ARRAY_UCHAR_H
 
 # include <stddef.h>
 
-typedef struct s_ft_types_array_signed_int
+typedef struct s_ft_types_array_uchar
 {
-	signed int	element;
-	size_t		count;
-}	t_ft_types_array_signed_int;
+	unsigned char	element;
+	size_t			count;
+}	t_ft_types_array_uchar;
 
 #endif

@@ -10,15 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_TYPES_ARRAY_INT_H
-# define FT_TYPES_ARRAY_INT_H
+#ifndef FT_TYPES_ARRAY_I8_H
+# define FT_TYPES_ARRAY_I8_H
 
 # include <stddef.h>
+# include <stdint.h>
 
-typedef struct s_ft_types_array_int
+typedef struct s_ft_types_array_i8
 {
-	signed int	element;
-	size_t		count;
-}	t_ft_types_array_int;
+	int8_t	element;
+	size_t	count;
+}	t_ft_types_array_i8;
 
 #endif

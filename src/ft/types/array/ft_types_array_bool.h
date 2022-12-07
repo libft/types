@@ -10,15 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_TYPES_ARRAY_INT_H
-# define FT_TYPES_ARRAY_INT_H
+#ifndef FT_TYPES_ARRAY_BOOL_H
+# define FT_TYPES_ARRAY_BOOL_H
 
 # include <stddef.h>
+# include <stdbool.h>
 
-typedef struct s_ft_types_array_int
+typedef struct s_ft_types_array_bool
 {
-	signed int	element;
-	size_t		count;
-}	t_ft_types_array_int;
+	bool	element;
+	size_t	count;
+}	t_ft_types_array_bool;
 
 #endif

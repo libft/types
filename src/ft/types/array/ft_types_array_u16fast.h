@@ -10,15 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_TYPES_ARRAY_UNSIGNED_CHAR_H
-# define FT_TYPES_ARRAY_UNSIGNED_CHAR_H
+#ifndef FT_TYPES_ARRAY_U16FAST_H
+# define FT_TYPES_ARRAY_U16FAST_H
 
 # include <stddef.h>
+# include <stdint.h>
 
-typedef struct s_ft_types_array_unsigned_char
+typedef struct s_ft_types_array_u16fast
 {
-	unsigned char	element;
+	uint_fast16_t	element;
 	size_t			count;
-}	t_ft_types_array_unsigned_char;
+}	t_ft_types_array_u16fast;
 
 #endif

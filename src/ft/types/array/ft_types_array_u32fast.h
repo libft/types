@@ -10,15 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_TYPES_ARRAY_UNSIGNED_LONG_H
-# define FT_TYPES_ARRAY_UNSIGNED_LONG_H
+#ifndef FT_TYPES_ARRAY_U32FAST_H
+# define FT_TYPES_ARRAY_U32FAST_H
 
 # include <stddef.h>
+# include <stdint.h>
 
-typedef struct s_ft_types_array_unsigned_long
+typedef struct s_ft_types_array_u32fast
 {
-	unsigned long	element;
+	uint_fast32_t	element;
 	size_t			count;
-}	t_ft_types_array_unsigned_long;
+}	t_ft_types_array_u32fast;
 
 #endif

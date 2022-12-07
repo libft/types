@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_TYPES_ARRAY_UNSIGNED_SHORT_H
-# define FT_TYPES_ARRAY_UNSIGNED_SHORT_H
+#ifndef FT_TYPES_ARRAY_SCHAR_H
+# define FT_TYPES_ARRAY_SCHAR_H
 
 # include <stddef.h>
 
-typedef struct s_ft_types_array_unsigned_short
+typedef struct s_ft_types_array_schar
 {
-	unsigned short	element;
-	size_t			count;
-}	t_ft_types_array_unsigned_short;
+	signed char	element;
+	size_t		count;
+}	t_ft_types_array_schar;
 
 #endif
