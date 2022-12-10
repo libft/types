@@ -46,5 +46,8 @@ t_err	ft_types_slist_double_push(
 t_err	ft_types_slist_double_unshift(
 			t_ft_types_slist_double *list,
 			double value);
+bool	ft_types_slist_double_shift(
+			t_ft_types_slist_double *list,
+			double *out);
 
 #endif

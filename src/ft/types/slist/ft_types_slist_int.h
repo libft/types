@@ -46,5 +46,8 @@ t_err	ft_types_slist_int_push(
 t_err	ft_types_slist_int_unshift(
 			t_ft_types_slist_int *list,
 			signed int value);
+bool	ft_types_slist_int_shift(
+			t_ft_types_slist_int *list,
+			signed int *out);
 
 #endif

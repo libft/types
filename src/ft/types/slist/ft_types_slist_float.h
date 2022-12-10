@@ -46,5 +46,8 @@ t_err	ft_types_slist_float_push(
 t_err	ft_types_slist_float_unshift(
 			t_ft_types_slist_float *list,
 			float value);
+bool	ft_types_slist_float_shift(
+			t_ft_types_slist_float *list,
+			float *out);
 
 #endif

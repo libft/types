@@ -47,5 +47,8 @@ t_err	ft_types_slist_bool_push(
 t_err	ft_types_slist_bool_unshift(
 			t_ft_types_slist_bool *list,
 			bool value);
+bool	ft_types_slist_bool_shift(
+			t_ft_types_slist_bool *list,
+			bool *out);
 
 #endif

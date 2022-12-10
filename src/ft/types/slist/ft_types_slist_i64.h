@@ -47,5 +47,8 @@ t_err	ft_types_slist_i64_push(
 t_err	ft_types_slist_i64_unshift(
 			t_ft_types_slist_i64 *list,
 			int64_t value);
+bool	ft_types_slist_i64_shift(
+			t_ft_types_slist_i64 *list,
+			int64_t *out);
 
 #endif

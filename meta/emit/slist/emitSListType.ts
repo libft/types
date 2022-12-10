@@ -2,6 +2,7 @@ import { emitClear } from "./emitClear";
 import { emitFromArray } from "./emitFromArray";
 import { emitInit } from "./emitInit";
 import { emitPush } from "./emitPush";
+import { emitShift } from "./emitShift";
 import { emitToArray } from "./emitToArray";
 import { emitType } from "./emitType";
 import { emitUnshift } from "./emitUnshift";
@@ -18,4 +19,5 @@ export async function emitSListType(
   await emitFromArray(typename, originalType, dependencies);
   await emitPush(typename, originalType, dependencies);
   await emitUnshift(typename, originalType, dependencies);
+  await emitShift(typename, originalType, dependencies);
 }

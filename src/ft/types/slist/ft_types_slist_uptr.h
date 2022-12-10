@@ -47,5 +47,8 @@ t_err	ft_types_slist_uptr_push(
 t_err	ft_types_slist_uptr_unshift(
 			t_ft_types_slist_uptr *list,
 			uintptr_t value);
+bool	ft_types_slist_uptr_shift(
+			t_ft_types_slist_uptr *list,
+			uintptr_t *out);
 
 #endif

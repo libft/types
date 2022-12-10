@@ -13,6 +13,7 @@ import {
 } from "./emitFromArray";
 import { initPrototype, initPrototypeDependencies } from "./emitInit";
 import { pushPrototype, pushPrototypeDependencies } from "./emitPush";
+import { shiftPrototype, shiftPrototypeDependencies } from "./emitShift";
 import { toArrayPrototype, toArrayPrototypeDependencies } from "./emitToArray";
 import { unshiftPrototype, unshiftPrototypeDependencies } from "./emitUnshift";
 
@@ -34,6 +35,7 @@ ${includesInHeader(
   ...fromArrayPrototypeDependencies(typename),
   ...pushPrototypeDependencies(typename),
   ...unshiftPrototypeDependencies(typename),
+  ...shiftPrototypeDependencies(typename),
   ...dependencies
 )}
 
@@ -54,6 +56,7 @@ ${toArrayPrototype(typename)}
 ${fromArrayPrototype(typename)}
 ${pushPrototype(typename, originalType)}
 ${unshiftPrototype(typename, originalType)}
+${shiftPrototype(typename, originalType)}
 
 ${headerProtectionEnd}
 `

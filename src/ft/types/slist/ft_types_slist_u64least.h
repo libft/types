@@ -47,5 +47,8 @@ t_err	ft_types_slist_u64least_push(
 t_err	ft_types_slist_u64least_unshift(
 			t_ft_types_slist_u64least *list,
 			uint_least64_t value);
+bool	ft_types_slist_u64least_shift(
+			t_ft_types_slist_u64least *list,
+			uint_least64_t *out);
 
 #endif

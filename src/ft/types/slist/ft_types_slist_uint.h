@@ -46,5 +46,8 @@ t_err	ft_types_slist_uint_push(
 t_err	ft_types_slist_uint_unshift(
 			t_ft_types_slist_uint *list,
 			unsigned int value);
+bool	ft_types_slist_uint_shift(
+			t_ft_types_slist_uint *list,
+			unsigned int *out);
 
 #endif

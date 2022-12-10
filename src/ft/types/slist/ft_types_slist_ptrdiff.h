@@ -46,5 +46,8 @@ t_err	ft_types_slist_ptrdiff_push(
 t_err	ft_types_slist_ptrdiff_unshift(
 			t_ft_types_slist_ptrdiff *list,
 			ptrdiff_t value);
+bool	ft_types_slist_ptrdiff_shift(
+			t_ft_types_slist_ptrdiff *list,
+			ptrdiff_t *out);
 
 #endif

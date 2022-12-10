@@ -47,5 +47,8 @@ t_err	ft_types_slist_i32_push(
 t_err	ft_types_slist_i32_unshift(
 			t_ft_types_slist_i32 *list,
 			int32_t value);
+bool	ft_types_slist_i32_shift(
+			t_ft_types_slist_i32 *list,
+			int32_t *out);
 
 #endif

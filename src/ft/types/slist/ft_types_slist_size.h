@@ -46,5 +46,8 @@ t_err	ft_types_slist_size_push(
 t_err	ft_types_slist_size_unshift(
 			t_ft_types_slist_size *list,
 			size_t value);
+bool	ft_types_slist_size_shift(
+			t_ft_types_slist_size *list,
+			size_t *out);
 
 #endif

@@ -47,5 +47,8 @@ t_err	ft_types_slist_u64fast_push(
 t_err	ft_types_slist_u64fast_unshift(
 			t_ft_types_slist_u64fast *list,
 			uint_fast64_t value);
+bool	ft_types_slist_u64fast_shift(
+			t_ft_types_slist_u64fast *list,
+			uint_fast64_t *out);
 
 #endif

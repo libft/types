@@ -47,5 +47,8 @@ t_err	ft_types_slist_imax_push(
 t_err	ft_types_slist_imax_unshift(
 			t_ft_types_slist_imax *list,
 			intmax_t value);
+bool	ft_types_slist_imax_shift(
+			t_ft_types_slist_imax *list,
+			intmax_t *out);
 
 #endif

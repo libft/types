@@ -46,5 +46,8 @@ t_err	ft_types_slist_longlong_push(
 t_err	ft_types_slist_longlong_unshift(
 			t_ft_types_slist_longlong *list,
 			signed long long value);
+bool	ft_types_slist_longlong_shift(
+			t_ft_types_slist_longlong *list,
+			signed long long *out);
 
 #endif

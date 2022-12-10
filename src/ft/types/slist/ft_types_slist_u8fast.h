@@ -47,5 +47,8 @@ t_err	ft_types_slist_u8fast_push(
 t_err	ft_types_slist_u8fast_unshift(
 			t_ft_types_slist_u8fast *list,
 			uint_fast8_t value);
+bool	ft_types_slist_u8fast_shift(
+			t_ft_types_slist_u8fast *list,
+			uint_fast8_t *out);
 
 #endif

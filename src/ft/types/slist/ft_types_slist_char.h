@@ -46,5 +46,8 @@ t_err	ft_types_slist_char_push(
 t_err	ft_types_slist_char_unshift(
 			t_ft_types_slist_char *list,
 			char value);
+bool	ft_types_slist_char_shift(
+			t_ft_types_slist_char *list,
+			char *out);
 
 #endif

@@ -46,5 +46,8 @@ t_err	ft_types_slist_uchar_push(
 t_err	ft_types_slist_uchar_unshift(
 			t_ft_types_slist_uchar *list,
 			unsigned char value);
+bool	ft_types_slist_uchar_shift(
+			t_ft_types_slist_uchar *list,
+			unsigned char *out);
 
 #endif

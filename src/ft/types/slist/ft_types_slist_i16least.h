@@ -47,5 +47,8 @@ t_err	ft_types_slist_i16least_push(
 t_err	ft_types_slist_i16least_unshift(
 			t_ft_types_slist_i16least *list,
 			int_least16_t value);
+bool	ft_types_slist_i16least_shift(
+			t_ft_types_slist_i16least *list,
+			int_least16_t *out);
 
 #endif

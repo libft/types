@@ -47,5 +47,8 @@ t_err	ft_types_slist_i16_push(
 t_err	ft_types_slist_i16_unshift(
 			t_ft_types_slist_i16 *list,
 			int16_t value);
+bool	ft_types_slist_i16_shift(
+			t_ft_types_slist_i16 *list,
+			int16_t *out);
 
 #endif
