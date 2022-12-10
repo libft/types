@@ -35,5 +35,8 @@ void	ft_types_slist_float_clear(
 t_err	ft_types_slist_float_to_array(
 			t_ft_types_slist_float *list,
 			t_ft_types_array_float *out);
+t_err	ft_types_slist_float_push(
+			t_ft_types_slist_float *list,
+			float value);
 
 #endif

@@ -35,5 +35,8 @@ void	ft_types_slist_schar_clear(
 t_err	ft_types_slist_schar_to_array(
 			t_ft_types_slist_schar *list,
 			t_ft_types_array_schar *out);
+t_err	ft_types_slist_schar_push(
+			t_ft_types_slist_schar *list,
+			signed char value);
 
 #endif

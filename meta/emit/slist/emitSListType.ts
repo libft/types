@@ -1,4 +1,5 @@
 import { emitClear } from "./emitClear";
+import { emitPush } from "./emitPush";
 import { emitToArray } from "./emitToArray";
 import { emitType } from "./emitType";
 
@@ -9,5 +10,6 @@ export async function emitSListType(
 ): Promise<void> {
   await emitType(typename, originalType, dependencies);
   await emitClear(typename, originalType, dependencies);
+  await emitPush(typename, originalType, dependencies);
   await emitToArray(typename, originalType, dependencies);
 }

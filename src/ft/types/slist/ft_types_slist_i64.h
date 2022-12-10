@@ -36,5 +36,8 @@ void	ft_types_slist_i64_clear(
 t_err	ft_types_slist_i64_to_array(
 			t_ft_types_slist_i64 *list,
 			t_ft_types_array_i64 *out);
+t_err	ft_types_slist_i64_push(
+			t_ft_types_slist_i64 *list,
+			int64_t value);
 
 #endif

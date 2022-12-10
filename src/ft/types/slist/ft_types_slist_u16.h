@@ -36,5 +36,8 @@ void	ft_types_slist_u16_clear(
 t_err	ft_types_slist_u16_to_array(
 			t_ft_types_slist_u16 *list,
 			t_ft_types_array_u16 *out);
+t_err	ft_types_slist_u16_push(
+			t_ft_types_slist_u16 *list,
+			uint16_t value);
 
 #endif

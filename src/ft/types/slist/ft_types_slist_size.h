@@ -35,5 +35,8 @@ void	ft_types_slist_size_clear(
 t_err	ft_types_slist_size_to_array(
 			t_ft_types_slist_size *list,
 			t_ft_types_array_size *out);
+t_err	ft_types_slist_size_push(
+			t_ft_types_slist_size *list,
+			size_t value);
 
 #endif

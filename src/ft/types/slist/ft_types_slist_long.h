@@ -35,5 +35,8 @@ void	ft_types_slist_long_clear(
 t_err	ft_types_slist_long_to_array(
 			t_ft_types_slist_long *list,
 			t_ft_types_array_long *out);
+t_err	ft_types_slist_long_push(
+			t_ft_types_slist_long *list,
+			signed long value);
 
 #endif

@@ -36,5 +36,8 @@ void	ft_types_slist_i64fast_clear(
 t_err	ft_types_slist_i64fast_to_array(
 			t_ft_types_slist_i64fast *list,
 			t_ft_types_array_i64fast *out);
+t_err	ft_types_slist_i64fast_push(
+			t_ft_types_slist_i64fast *list,
+			int_fast64_t value);
 
 #endif

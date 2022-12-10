@@ -36,5 +36,8 @@ void	ft_types_slist_bool_clear(
 t_err	ft_types_slist_bool_to_array(
 			t_ft_types_slist_bool *list,
 			t_ft_types_array_bool *out);
+t_err	ft_types_slist_bool_push(
+			t_ft_types_slist_bool *list,
+			bool value);
 
 #endif

@@ -36,5 +36,8 @@ void	ft_types_slist_i32least_clear(
 t_err	ft_types_slist_i32least_to_array(
 			t_ft_types_slist_i32least *list,
 			t_ft_types_array_i32least *out);
+t_err	ft_types_slist_i32least_push(
+			t_ft_types_slist_i32least *list,
+			int_least32_t value);
 
 #endif

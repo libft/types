@@ -36,5 +36,8 @@ void	ft_types_slist_u8_clear(
 t_err	ft_types_slist_u8_to_array(
 			t_ft_types_slist_u8 *list,
 			t_ft_types_array_u8 *out);
+t_err	ft_types_slist_u8_push(
+			t_ft_types_slist_u8 *list,
+			uint8_t value);
 
 #endif

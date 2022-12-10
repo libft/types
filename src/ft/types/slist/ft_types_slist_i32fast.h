@@ -36,5 +36,8 @@ void	ft_types_slist_i32fast_clear(
 t_err	ft_types_slist_i32fast_to_array(
 			t_ft_types_slist_i32fast *list,
 			t_ft_types_array_i32fast *out);
+t_err	ft_types_slist_i32fast_push(
+			t_ft_types_slist_i32fast *list,
+			int_fast32_t value);
 
 #endif
