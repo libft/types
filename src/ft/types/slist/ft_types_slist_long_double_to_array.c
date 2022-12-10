@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_memory.h"
 #include "ft_types_array_long_double.h"
 #include "ft_types_slist_long_double.h"

@@ -23,7 +23,6 @@ export async function emitToArray(
     `src/ft/types/slist/ft_types_slist_${typename}_to_array.c`,
     `${header}
 ${includes(
-  "<stdlib.h>",
   '"ft_types.h"',
   '"ft_memory.h"',
   `"ft_types_array_${typename}.h"`,

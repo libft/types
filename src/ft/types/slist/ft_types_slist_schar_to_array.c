@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_memory.h"
 #include "ft_types_array_schar.h"
 #include "ft_types_slist_schar.h"

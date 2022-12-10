@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_memory.h"
 #include "ft_types_array_umax.h"
 #include "ft_types_slist_umax.h"

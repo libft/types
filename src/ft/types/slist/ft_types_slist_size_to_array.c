@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdlib.h>
 #include "ft_memory.h"
 #include "ft_types_array_size.h"
 #include "ft_types_slist_size.h"

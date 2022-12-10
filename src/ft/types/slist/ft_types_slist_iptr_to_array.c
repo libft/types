@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_memory.h"
 #include "ft_types_array_iptr.h"
 #include "ft_types_slist_iptr.h"
