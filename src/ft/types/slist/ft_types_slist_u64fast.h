@@ -38,6 +38,9 @@ void	ft_types_slist_u64fast_clear(
 t_err	ft_types_slist_u64fast_to_array(
 			t_ft_types_slist_u64fast *list,
 			t_ft_types_array_u64fast *out);
+t_err	ft_types_slist_u64fast_from_array(
+			t_ft_types_array_u64fast *array,
+			t_ft_types_slist_u64fast *out);
 t_err	ft_types_slist_u64fast_push(
 			t_ft_types_slist_u64fast *list,
 			uint_fast64_t value);

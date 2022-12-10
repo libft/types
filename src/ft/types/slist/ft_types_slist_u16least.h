@@ -38,6 +38,9 @@ void	ft_types_slist_u16least_clear(
 t_err	ft_types_slist_u16least_to_array(
 			t_ft_types_slist_u16least *list,
 			t_ft_types_array_u16least *out);
+t_err	ft_types_slist_u16least_from_array(
+			t_ft_types_array_u16least *array,
+			t_ft_types_slist_u16least *out);
 t_err	ft_types_slist_u16least_push(
 			t_ft_types_slist_u16least *list,
 			uint_least16_t value);

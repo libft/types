@@ -37,6 +37,9 @@ void	ft_types_slist_uint_clear(
 t_err	ft_types_slist_uint_to_array(
 			t_ft_types_slist_uint *list,
 			t_ft_types_array_uint *out);
+t_err	ft_types_slist_uint_from_array(
+			t_ft_types_array_uint *array,
+			t_ft_types_slist_uint *out);
 t_err	ft_types_slist_uint_push(
 			t_ft_types_slist_uint *list,
 			unsigned int value);

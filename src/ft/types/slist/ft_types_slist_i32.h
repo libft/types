@@ -38,6 +38,9 @@ void	ft_types_slist_i32_clear(
 t_err	ft_types_slist_i32_to_array(
 			t_ft_types_slist_i32 *list,
 			t_ft_types_array_i32 *out);
+t_err	ft_types_slist_i32_from_array(
+			t_ft_types_array_i32 *array,
+			t_ft_types_slist_i32 *out);
 t_err	ft_types_slist_i32_push(
 			t_ft_types_slist_i32 *list,
 			int32_t value);

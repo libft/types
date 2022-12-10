@@ -38,6 +38,9 @@ void	ft_types_slist_uptr_clear(
 t_err	ft_types_slist_uptr_to_array(
 			t_ft_types_slist_uptr *list,
 			t_ft_types_array_uptr *out);
+t_err	ft_types_slist_uptr_from_array(
+			t_ft_types_array_uptr *array,
+			t_ft_types_slist_uptr *out);
 t_err	ft_types_slist_uptr_push(
 			t_ft_types_slist_uptr *list,
 			uintptr_t value);

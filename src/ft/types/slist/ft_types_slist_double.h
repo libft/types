@@ -37,6 +37,9 @@ void	ft_types_slist_double_clear(
 t_err	ft_types_slist_double_to_array(
 			t_ft_types_slist_double *list,
 			t_ft_types_array_double *out);
+t_err	ft_types_slist_double_from_array(
+			t_ft_types_array_double *array,
+			t_ft_types_slist_double *out);
 t_err	ft_types_slist_double_push(
 			t_ft_types_slist_double *list,
 			double value);

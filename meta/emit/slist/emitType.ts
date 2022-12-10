@@ -7,6 +7,10 @@ import {
 import { includesInHeader } from "../../util/includes";
 import { typedef } from "../../util/typedef";
 import { clearPrototype, clearPrototypeDependencies } from "./emitClear";
+import {
+  fromArrayPrototype,
+  fromArrayPrototypeDependencies,
+} from "./emitFromArray";
 import { initPrototype, initPrototypeDependencies } from "./emitInit";
 import { pushPrototype, pushPrototypeDependencies } from "./emitPush";
 import { toArrayPrototype, toArrayPrototypeDependencies } from "./emitToArray";
@@ -26,6 +30,7 @@ ${includesInHeader(
   ...initPrototypeDependencies(typename),
   ...clearPrototypeDependencies(typename),
   ...toArrayPrototypeDependencies(typename),
+  ...fromArrayPrototypeDependencies(typename),
   ...pushPrototypeDependencies(typename),
   ...dependencies
 )}
@@ -44,6 +49,7 @@ ${typedef(`ft_types_slist_${typename}`, [
 ${initPrototype(typename)}
 ${clearPrototype(typename)}
 ${toArrayPrototype(typename)}
+${fromArrayPrototype(typename)}
 ${pushPrototype(typename, originalType)}
 
 ${headerProtectionEnd}

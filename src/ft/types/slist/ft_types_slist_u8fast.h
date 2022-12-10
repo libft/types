@@ -38,6 +38,9 @@ void	ft_types_slist_u8fast_clear(
 t_err	ft_types_slist_u8fast_to_array(
 			t_ft_types_slist_u8fast *list,
 			t_ft_types_array_u8fast *out);
+t_err	ft_types_slist_u8fast_from_array(
+			t_ft_types_array_u8fast *array,
+			t_ft_types_slist_u8fast *out);
 t_err	ft_types_slist_u8fast_push(
 			t_ft_types_slist_u8fast *list,
 			uint_fast8_t value);

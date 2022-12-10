@@ -37,6 +37,9 @@ void	ft_types_slist_ptrdiff_clear(
 t_err	ft_types_slist_ptrdiff_to_array(
 			t_ft_types_slist_ptrdiff *list,
 			t_ft_types_array_ptrdiff *out);
+t_err	ft_types_slist_ptrdiff_from_array(
+			t_ft_types_array_ptrdiff *array,
+			t_ft_types_slist_ptrdiff *out);
 t_err	ft_types_slist_ptrdiff_push(
 			t_ft_types_slist_ptrdiff *list,
 			ptrdiff_t value);

@@ -37,6 +37,9 @@ void	ft_types_slist_ulong_clear(
 t_err	ft_types_slist_ulong_to_array(
 			t_ft_types_slist_ulong *list,
 			t_ft_types_array_ulong *out);
+t_err	ft_types_slist_ulong_from_array(
+			t_ft_types_array_ulong *array,
+			t_ft_types_slist_ulong *out);
 t_err	ft_types_slist_ulong_push(
 			t_ft_types_slist_ulong *list,
 			unsigned long value);

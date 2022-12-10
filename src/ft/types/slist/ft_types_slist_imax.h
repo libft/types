@@ -38,6 +38,9 @@ void	ft_types_slist_imax_clear(
 t_err	ft_types_slist_imax_to_array(
 			t_ft_types_slist_imax *list,
 			t_ft_types_array_imax *out);
+t_err	ft_types_slist_imax_from_array(
+			t_ft_types_array_imax *array,
+			t_ft_types_slist_imax *out);
 t_err	ft_types_slist_imax_push(
 			t_ft_types_slist_imax *list,
 			intmax_t value);

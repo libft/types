@@ -37,6 +37,9 @@ void	ft_types_slist_char_clear(
 t_err	ft_types_slist_char_to_array(
 			t_ft_types_slist_char *list,
 			t_ft_types_array_char *out);
+t_err	ft_types_slist_char_from_array(
+			t_ft_types_array_char *array,
+			t_ft_types_slist_char *out);
 t_err	ft_types_slist_char_push(
 			t_ft_types_slist_char *list,
 			char value);
