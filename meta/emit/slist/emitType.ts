@@ -6,6 +6,7 @@ import {
 } from "../../common/headerProtection";
 import { includesInHeader } from "../../util/includes";
 import { typedef } from "../../util/typedef";
+import { clearPrototype, clearPrototypeDependencies } from "./emitClear";
 import { toArrayPrototype, toArrayPrototypeDependencies } from "./emitToArray";
 
 export async function emitType(
@@ -20,6 +21,7 @@ export async function emitType(
 ${headerProtectionStart(`ft_types_slist_${typename}`)}
 ${includesInHeader(
   "<stddef.h>",
+  ...clearPrototypeDependencies(typename),
   ...toArrayPrototypeDependencies(typename),
   ...dependencies
 )}
@@ -35,6 +37,7 @@ ${typedef(`ft_types_slist_${typename}`, [
   { type: "size_t", name: "length" },
 ])}
 
+${clearPrototype(typename)}
 ${toArrayPrototype(typename)}
 
 ${headerProtectionEnd}

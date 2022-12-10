@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include "ft_types_array_float.h"
+# include "ft_types.h"
 
 typedef struct s_ft_types_slist_float_node
 {
@@ -29,6 +30,8 @@ typedef struct s_ft_types_slist_float
 	size_t						length;
 }	t_ft_types_slist_float;
 
+void	ft_types_slist_float_clear(
+			t_ft_types_slist_float *list);
 t_err	ft_types_slist_float_to_array(
 			t_ft_types_slist_float *list,
 			t_ft_types_array_float *out);

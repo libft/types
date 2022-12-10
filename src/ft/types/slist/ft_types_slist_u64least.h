@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdint.h>
 # include "ft_types_array_u64least.h"
+# include "ft_types.h"
 
 typedef struct s_ft_types_slist_u64least_node
 {
@@ -30,6 +31,8 @@ typedef struct s_ft_types_slist_u64least
 	size_t							length;
 }	t_ft_types_slist_u64least;
 
+void	ft_types_slist_u64least_clear(
+			t_ft_types_slist_u64least *list);
 t_err	ft_types_slist_u64least_to_array(
 			t_ft_types_slist_u64least *list,
 			t_ft_types_array_u64least *out);

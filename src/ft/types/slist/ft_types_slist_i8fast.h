@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdint.h>
 # include "ft_types_array_i8fast.h"
+# include "ft_types.h"
 
 typedef struct s_ft_types_slist_i8fast_node
 {
@@ -30,6 +31,8 @@ typedef struct s_ft_types_slist_i8fast
 	size_t							length;
 }	t_ft_types_slist_i8fast;
 
+void	ft_types_slist_i8fast_clear(
+			t_ft_types_slist_i8fast *list);
 t_err	ft_types_slist_i8fast_to_array(
 			t_ft_types_slist_i8fast *list,
 			t_ft_types_array_i8fast *out);

@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include "ft_types_array_ulonglong.h"
+# include "ft_types.h"
 
 typedef struct s_ft_types_slist_ulonglong_node
 {
@@ -29,6 +30,8 @@ typedef struct s_ft_types_slist_ulonglong
 	size_t							length;
 }	t_ft_types_slist_ulonglong;
 
+void	ft_types_slist_ulonglong_clear(
+			t_ft_types_slist_ulonglong *list);
 t_err	ft_types_slist_ulonglong_to_array(
 			t_ft_types_slist_ulonglong *list,
 			t_ft_types_array_ulonglong *out);

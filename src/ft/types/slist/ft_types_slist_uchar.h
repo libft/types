@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include "ft_types_array_uchar.h"
+# include "ft_types.h"
 
 typedef struct s_ft_types_slist_uchar_node
 {
@@ -29,6 +30,8 @@ typedef struct s_ft_types_slist_uchar
 	size_t						length;
 }	t_ft_types_slist_uchar;
 
+void	ft_types_slist_uchar_clear(
+			t_ft_types_slist_uchar *list);
 t_err	ft_types_slist_uchar_to_array(
 			t_ft_types_slist_uchar *list,
 			t_ft_types_array_uchar *out);

@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdint.h>
 # include "ft_types_array_u16.h"
+# include "ft_types.h"
 
 typedef struct s_ft_types_slist_u16_node
 {
@@ -30,6 +31,8 @@ typedef struct s_ft_types_slist_u16
 	size_t						length;
 }	t_ft_types_slist_u16;
 
+void	ft_types_slist_u16_clear(
+			t_ft_types_slist_u16 *list);
 t_err	ft_types_slist_u16_to_array(
 			t_ft_types_slist_u16 *list,
 			t_ft_types_array_u16 *out);

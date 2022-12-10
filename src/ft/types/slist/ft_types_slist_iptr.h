@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdint.h>
 # include "ft_types_array_iptr.h"
+# include "ft_types.h"
 
 typedef struct s_ft_types_slist_iptr_node
 {
@@ -30,6 +31,8 @@ typedef struct s_ft_types_slist_iptr
 	size_t						length;
 }	t_ft_types_slist_iptr;
 
+void	ft_types_slist_iptr_clear(
+			t_ft_types_slist_iptr *list);
 t_err	ft_types_slist_iptr_to_array(
 			t_ft_types_slist_iptr *list,
 			t_ft_types_array_iptr *out);

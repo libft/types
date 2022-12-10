@@ -4,7 +4,7 @@ import { includes } from "../../util/includes";
 import { variableDecls } from "../../util/variableDecls";
 
 export function toArrayPrototypeDependencies(typename: string): string[] {
-  return [`"ft_types_array_${typename}.h"`];
+  return ['"ft_types.h"', `"ft_types_array_${typename}.h"`];
 }
 
 export function toArrayPrototype(typename: string): string {
