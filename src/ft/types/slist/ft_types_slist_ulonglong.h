@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_ulonglong_node
 {
-	struct s_ft_types_slist_ulonglong	*next;
-	unsigned long long					value;
+	struct s_ft_types_slist_ulonglong_node	*next;
+	unsigned long long						value;
 }	t_ft_types_slist_ulonglong_node;
 
 typedef struct s_ft_types_slist_ulonglong

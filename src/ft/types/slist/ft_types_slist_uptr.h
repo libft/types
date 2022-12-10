@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_uptr_node
 {
-	struct s_ft_types_slist_uptr	*next;
-	uintptr_t						value;
+	struct s_ft_types_slist_uptr_node	*next;
+	uintptr_t							value;
 }	t_ft_types_slist_uptr_node;
 
 typedef struct s_ft_types_slist_uptr

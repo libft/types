@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_u16_node
 {
-	struct s_ft_types_slist_u16	*next;
-	uint16_t					value;
+	struct s_ft_types_slist_u16_node	*next;
+	uint16_t							value;
 }	t_ft_types_slist_u16_node;
 
 typedef struct s_ft_types_slist_u16

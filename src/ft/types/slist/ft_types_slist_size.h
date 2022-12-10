@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_size_node
 {
-	struct s_ft_types_slist_size	*next;
-	size_t							value;
+	struct s_ft_types_slist_size_node	*next;
+	size_t								value;
 }	t_ft_types_slist_size_node;
 
 typedef struct s_ft_types_slist_size

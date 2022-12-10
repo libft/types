@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_iptr_node
 {
-	struct s_ft_types_slist_iptr	*next;
-	intptr_t						value;
+	struct s_ft_types_slist_iptr_node	*next;
+	intptr_t							value;
 }	t_ft_types_slist_iptr_node;
 
 typedef struct s_ft_types_slist_iptr

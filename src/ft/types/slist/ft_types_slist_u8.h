@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_u8_node
 {
-	struct s_ft_types_slist_u8	*next;
-	uint8_t						value;
+	struct s_ft_types_slist_u8_node	*next;
+	uint8_t							value;
 }	t_ft_types_slist_u8_node;
 
 typedef struct s_ft_types_slist_u8

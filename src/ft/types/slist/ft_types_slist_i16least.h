@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_i16least_node
 {
-	struct s_ft_types_slist_i16least	*next;
-	int_least16_t						value;
+	struct s_ft_types_slist_i16least_node	*next;
+	int_least16_t							value;
 }	t_ft_types_slist_i16least_node;
 
 typedef struct s_ft_types_slist_i16least

@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_schar_node
 {
-	struct s_ft_types_slist_schar	*next;
-	signed char						value;
+	struct s_ft_types_slist_schar_node	*next;
+	signed char							value;
 }	t_ft_types_slist_schar_node;
 
 typedef struct s_ft_types_slist_schar

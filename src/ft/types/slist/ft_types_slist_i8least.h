@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_i8least_node
 {
-	struct s_ft_types_slist_i8least	*next;
-	int_least8_t					value;
+	struct s_ft_types_slist_i8least_node	*next;
+	int_least8_t							value;
 }	t_ft_types_slist_i8least_node;
 
 typedef struct s_ft_types_slist_i8least

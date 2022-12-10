@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_umax_node
 {
-	struct s_ft_types_slist_umax	*next;
-	uintmax_t						value;
+	struct s_ft_types_slist_umax_node	*next;
+	uintmax_t							value;
 }	t_ft_types_slist_umax_node;
 
 typedef struct s_ft_types_slist_umax

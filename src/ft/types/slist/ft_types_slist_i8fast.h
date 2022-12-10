@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_i8fast_node
 {
-	struct s_ft_types_slist_i8fast	*next;
-	int_fast8_t						value;
+	struct s_ft_types_slist_i8fast_node	*next;
+	int_fast8_t							value;
 }	t_ft_types_slist_i8fast_node;
 
 typedef struct s_ft_types_slist_i8fast

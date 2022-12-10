@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_char_node
 {
-	struct s_ft_types_slist_char	*next;
-	char							value;
+	struct s_ft_types_slist_char_node	*next;
+	char								value;
 }	t_ft_types_slist_char_node;
 
 typedef struct s_ft_types_slist_char

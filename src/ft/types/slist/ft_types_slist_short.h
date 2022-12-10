@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_short_node
 {
-	struct s_ft_types_slist_short	*next;
-	signed short					value;
+	struct s_ft_types_slist_short_node	*next;
+	signed short						value;
 }	t_ft_types_slist_short_node;
 
 typedef struct s_ft_types_slist_short

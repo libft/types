@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_long_double_node
 {
-	struct s_ft_types_slist_long_double	*next;
-	long double							value;
+	struct s_ft_types_slist_long_double_node	*next;
+	long double									value;
 }	t_ft_types_slist_long_double_node;
 
 typedef struct s_ft_types_slist_long_double

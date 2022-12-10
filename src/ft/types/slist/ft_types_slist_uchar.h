@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_uchar_node
 {
-	struct s_ft_types_slist_uchar	*next;
-	unsigned char					value;
+	struct s_ft_types_slist_uchar_node	*next;
+	unsigned char						value;
 }	t_ft_types_slist_uchar_node;
 
 typedef struct s_ft_types_slist_uchar

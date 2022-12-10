@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_float_node
 {
-	struct s_ft_types_slist_float	*next;
-	float							value;
+	struct s_ft_types_slist_float_node	*next;
+	float								value;
 }	t_ft_types_slist_float_node;
 
 typedef struct s_ft_types_slist_float

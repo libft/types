@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_longlong_node
 {
-	struct s_ft_types_slist_longlong	*next;
-	signed long long					value;
+	struct s_ft_types_slist_longlong_node	*next;
+	signed long long						value;
 }	t_ft_types_slist_longlong_node;
 
 typedef struct s_ft_types_slist_longlong

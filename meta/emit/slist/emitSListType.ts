@@ -1,3 +1,4 @@
+import { emitToArray } from "./emitToArray";
 import { emitType } from "./emitType";
 
 export async function emitSListType(
@@ -6,4 +7,5 @@ export async function emitSListType(
   dependencies: string[] = []
 ): Promise<void> {
   await emitType(typename, originalType, dependencies);
+  await emitToArray(typename, originalType, dependencies);
 }

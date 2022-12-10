@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_int_node
 {
-	struct s_ft_types_slist_int	*next;
-	signed int					value;
+	struct s_ft_types_slist_int_node	*next;
+	signed int							value;
 }	t_ft_types_slist_int_node;
 
 typedef struct s_ft_types_slist_int

@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_uint_node
 {
-	struct s_ft_types_slist_uint	*next;
-	unsigned int					value;
+	struct s_ft_types_slist_uint_node	*next;
+	unsigned int						value;
 }	t_ft_types_slist_uint_node;
 
 typedef struct s_ft_types_slist_uint

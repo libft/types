@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_bool_node
 {
-	struct s_ft_types_slist_bool	*next;
-	bool							value;
+	struct s_ft_types_slist_bool_node	*next;
+	bool								value;
 }	t_ft_types_slist_bool_node;
 
 typedef struct s_ft_types_slist_bool

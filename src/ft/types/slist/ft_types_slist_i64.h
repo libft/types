@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_i64_node
 {
-	struct s_ft_types_slist_i64	*next;
-	int64_t						value;
+	struct s_ft_types_slist_i64_node	*next;
+	int64_t								value;
 }	t_ft_types_slist_i64_node;
 
 typedef struct s_ft_types_slist_i64

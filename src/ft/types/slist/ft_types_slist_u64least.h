@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_u64least_node
 {
-	struct s_ft_types_slist_u64least	*next;
-	uint_least64_t						value;
+	struct s_ft_types_slist_u64least_node	*next;
+	uint_least64_t							value;
 }	t_ft_types_slist_u64least_node;
 
 typedef struct s_ft_types_slist_u64least

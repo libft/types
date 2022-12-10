@@ -18,8 +18,8 @@
 
 typedef struct s_ft_types_slist_imax_node
 {
-	struct s_ft_types_slist_imax	*next;
-	intmax_t						value;
+	struct s_ft_types_slist_imax_node	*next;
+	intmax_t							value;
 }	t_ft_types_slist_imax_node;
 
 typedef struct s_ft_types_slist_imax

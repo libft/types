@@ -17,8 +17,8 @@
 
 typedef struct s_ft_types_slist_ptrdiff_node
 {
-	struct s_ft_types_slist_ptrdiff	*next;
-	ptrdiff_t						value;
+	struct s_ft_types_slist_ptrdiff_node	*next;
+	ptrdiff_t								value;
 }	t_ft_types_slist_ptrdiff_node;
 
 typedef struct s_ft_types_slist_ptrdiff

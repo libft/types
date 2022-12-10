@@ -20,7 +20,7 @@ ${headerProtectionStart(`ft_types_slist_${typename}`)}
 ${includesInHeader("<stddef.h>", ...dependencies)}
 
 ${typedef(`ft_types_slist_${typename}_node`, [
-  { type: `struct s_ft_types_slist_${typename}`, name: "*next" },
+  { type: `struct s_ft_types_slist_${typename}_node`, name: "*next" },
   { type: originalType, name: "value" },
 ])}
 
