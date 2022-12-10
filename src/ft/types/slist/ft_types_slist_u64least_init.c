@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_u64least.h"
 
 void	ft_types_slist_u64least_init(

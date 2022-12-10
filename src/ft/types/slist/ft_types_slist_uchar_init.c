@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_types_slist_uchar.h"
 
 void	ft_types_slist_uchar_init(

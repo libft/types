@@ -1,7 +1,6 @@
 import { promises as fs } from "fs";
 import { header } from "../../common/header";
 import { includes } from "../../util/includes";
-import { variableDecls } from "../../util/variableDecls";
 
 export function initPrototypeDependencies(_typename: string): string[] {
   return [];
@@ -21,7 +20,7 @@ export async function emitInit(
   await fs.writeFile(
     `src/ft/types/slist/ft_types_slist_${typename}_init.c`,
     `${header}
-${includes("<stdlib.h>", `"ft_types_slist_${typename}.h"`, ...dependencies)}
+${includes(`"ft_types_slist_${typename}.h"`, ...dependencies)}
 
 void\tft_types_slist_${typename}_init(
 \tt_ft_types_slist_${typename} *list

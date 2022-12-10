@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_u32.h"
 
 void	ft_types_slist_u32_init(

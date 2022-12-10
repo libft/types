@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdlib.h>
 #include "ft_types_slist_size.h"
 
 void	ft_types_slist_size_init(

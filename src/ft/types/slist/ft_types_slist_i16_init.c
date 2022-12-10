@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_i16.h"
 
 void	ft_types_slist_i16_init(

@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_u64fast.h"
 
 void	ft_types_slist_u64fast_init(

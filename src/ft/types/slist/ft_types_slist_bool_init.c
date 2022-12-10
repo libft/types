@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stdbool.h>
-#include <stdlib.h>
 #include "ft_types_slist_bool.h"
 
 void	ft_types_slist_bool_init(
