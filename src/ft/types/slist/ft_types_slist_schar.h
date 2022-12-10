@@ -14,6 +14,7 @@
 # define FT_TYPES_SLIST_SCHAR_H
 
 # include <stddef.h>
+# include "ft_types_array_schar.h"
 
 typedef struct s_ft_types_slist_schar_node
 {
@@ -27,5 +28,9 @@ typedef struct s_ft_types_slist_schar
 	t_ft_types_slist_schar_node	*tail;
 	size_t						length;
 }	t_ft_types_slist_schar;
+
+t_err	ft_types_slist_schar_to_array(
+			t_ft_types_slist_schar *list,
+			t_ft_types_array_schar *out);
 
 #endif

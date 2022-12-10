@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include <stdint.h>
+# include "ft_types_array_u64fast.h"
 
 typedef struct s_ft_types_slist_u64fast_node
 {
@@ -28,5 +29,9 @@ typedef struct s_ft_types_slist_u64fast
 	t_ft_types_slist_u64fast_node	*tail;
 	size_t							length;
 }	t_ft_types_slist_u64fast;
+
+t_err	ft_types_slist_u64fast_to_array(
+			t_ft_types_slist_u64fast *list,
+			t_ft_types_array_u64fast *out);
 
 #endif

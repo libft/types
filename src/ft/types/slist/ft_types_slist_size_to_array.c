@@ -18,10 +18,6 @@
 #include "ft_types.h"
 
 t_err	ft_types_slist_size_to_array(
-			t_ft_types_slist_size *list,
-			t_ft_types_array_size *out);
-
-t_err	ft_types_slist_size_to_array(
 	t_ft_types_slist_size *list,
 	t_ft_types_array_size *out
 )

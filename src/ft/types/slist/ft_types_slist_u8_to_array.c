@@ -18,10 +18,6 @@
 #include "ft_types.h"
 
 t_err	ft_types_slist_u8_to_array(
-			t_ft_types_slist_u8 *list,
-			t_ft_types_array_u8 *out);
-
-t_err	ft_types_slist_u8_to_array(
 	t_ft_types_slist_u8 *list,
 	t_ft_types_array_u8 *out
 )

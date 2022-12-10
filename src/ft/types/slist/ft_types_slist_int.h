@@ -14,6 +14,7 @@
 # define FT_TYPES_SLIST_INT_H
 
 # include <stddef.h>
+# include "ft_types_array_int.h"
 
 typedef struct s_ft_types_slist_int_node
 {
@@ -27,5 +28,9 @@ typedef struct s_ft_types_slist_int
 	t_ft_types_slist_int_node	*tail;
 	size_t						length;
 }	t_ft_types_slist_int;
+
+t_err	ft_types_slist_int_to_array(
+			t_ft_types_slist_int *list,
+			t_ft_types_array_int *out);
 
 #endif

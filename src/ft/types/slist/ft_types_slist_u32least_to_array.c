@@ -18,10 +18,6 @@
 #include "ft_types.h"
 
 t_err	ft_types_slist_u32least_to_array(
-			t_ft_types_slist_u32least *list,
-			t_ft_types_array_u32least *out);
-
-t_err	ft_types_slist_u32least_to_array(
 	t_ft_types_slist_u32least *list,
 	t_ft_types_array_u32least *out
 )

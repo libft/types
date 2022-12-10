@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include <stdint.h>
+# include "ft_types_array_i8least.h"
 
 typedef struct s_ft_types_slist_i8least_node
 {
@@ -28,5 +29,9 @@ typedef struct s_ft_types_slist_i8least
 	t_ft_types_slist_i8least_node	*tail;
 	size_t							length;
 }	t_ft_types_slist_i8least;
+
+t_err	ft_types_slist_i8least_to_array(
+			t_ft_types_slist_i8least *list,
+			t_ft_types_array_i8least *out);
 
 #endif

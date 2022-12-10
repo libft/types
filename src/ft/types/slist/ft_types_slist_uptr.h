@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include <stdint.h>
+# include "ft_types_array_uptr.h"
 
 typedef struct s_ft_types_slist_uptr_node
 {
@@ -28,5 +29,9 @@ typedef struct s_ft_types_slist_uptr
 	t_ft_types_slist_uptr_node	*tail;
 	size_t						length;
 }	t_ft_types_slist_uptr;
+
+t_err	ft_types_slist_uptr_to_array(
+			t_ft_types_slist_uptr *list,
+			t_ft_types_array_uptr *out);
 
 #endif

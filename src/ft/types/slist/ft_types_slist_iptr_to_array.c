@@ -18,10 +18,6 @@
 #include "ft_types.h"
 
 t_err	ft_types_slist_iptr_to_array(
-			t_ft_types_slist_iptr *list,
-			t_ft_types_array_iptr *out);
-
-t_err	ft_types_slist_iptr_to_array(
 	t_ft_types_slist_iptr *list,
 	t_ft_types_array_iptr *out
 )

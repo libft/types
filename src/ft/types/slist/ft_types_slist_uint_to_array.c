@@ -17,10 +17,6 @@
 #include "ft_types.h"
 
 t_err	ft_types_slist_uint_to_array(
-			t_ft_types_slist_uint *list,
-			t_ft_types_array_uint *out);
-
-t_err	ft_types_slist_uint_to_array(
 	t_ft_types_slist_uint *list,
 	t_ft_types_array_uint *out
 )

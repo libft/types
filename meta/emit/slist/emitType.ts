@@ -6,6 +6,7 @@ import {
 } from "../../common/headerProtection";
 import { includesInHeader } from "../../util/includes";
 import { typedef } from "../../util/typedef";
+import { toArrayPrototype, toArrayPrototypeDependencies } from "./emitToArray";
 
 export async function emitType(
   typename: string,
@@ -17,7 +18,11 @@ export async function emitType(
     `src/ft/types/slist/ft_types_slist_${typename}.h`,
     `${header}
 ${headerProtectionStart(`ft_types_slist_${typename}`)}
-${includesInHeader("<stddef.h>", ...dependencies)}
+${includesInHeader(
+  "<stddef.h>",
+  ...toArrayPrototypeDependencies(typename),
+  ...dependencies
+)}
 
 ${typedef(`ft_types_slist_${typename}_node`, [
   { type: `struct s_ft_types_slist_${typename}_node`, name: "*next" },
@@ -29,6 +34,8 @@ ${typedef(`ft_types_slist_${typename}`, [
   { type: `t_ft_types_slist_${typename}_node`, name: "*tail" },
   { type: "size_t", name: "length" },
 ])}
+
+${toArrayPrototype(typename)}
 
 ${headerProtectionEnd}
 `

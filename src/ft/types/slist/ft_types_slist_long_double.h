@@ -14,6 +14,7 @@
 # define FT_TYPES_SLIST_LONG_DOUBLE_H
 
 # include <stddef.h>
+# include "ft_types_array_long_double.h"
 
 typedef struct s_ft_types_slist_long_double_node
 {
@@ -27,5 +28,9 @@ typedef struct s_ft_types_slist_long_double
 	t_ft_types_slist_long_double_node	*tail;
 	size_t								length;
 }	t_ft_types_slist_long_double;
+
+t_err	ft_types_slist_long_double_to_array(
+			t_ft_types_slist_long_double *list,
+			t_ft_types_array_long_double *out);
 
 #endif

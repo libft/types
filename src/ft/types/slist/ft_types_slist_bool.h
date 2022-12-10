@@ -15,6 +15,7 @@
 
 # include <stdbool.h>
 # include <stddef.h>
+# include "ft_types_array_bool.h"
 
 typedef struct s_ft_types_slist_bool_node
 {
@@ -28,5 +29,9 @@ typedef struct s_ft_types_slist_bool
 	t_ft_types_slist_bool_node	*tail;
 	size_t						length;
 }	t_ft_types_slist_bool;
+
+t_err	ft_types_slist_bool_to_array(
+			t_ft_types_slist_bool *list,
+			t_ft_types_array_bool *out);
 
 #endif

@@ -17,10 +17,6 @@
 #include "ft_types.h"
 
 t_err	ft_types_slist_ulong_to_array(
-			t_ft_types_slist_ulong *list,
-			t_ft_types_array_ulong *out);
-
-t_err	ft_types_slist_ulong_to_array(
 	t_ft_types_slist_ulong *list,
 	t_ft_types_array_ulong *out
 )

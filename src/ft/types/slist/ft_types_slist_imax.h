@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include <stdint.h>
+# include "ft_types_array_imax.h"
 
 typedef struct s_ft_types_slist_imax_node
 {
@@ -28,5 +29,9 @@ typedef struct s_ft_types_slist_imax
 	t_ft_types_slist_imax_node	*tail;
 	size_t						length;
 }	t_ft_types_slist_imax;
+
+t_err	ft_types_slist_imax_to_array(
+			t_ft_types_slist_imax *list,
+			t_ft_types_array_imax *out);
 
 #endif

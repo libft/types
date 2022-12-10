@@ -14,6 +14,7 @@
 # define FT_TYPES_SLIST_PTRDIFF_H
 
 # include <stddef.h>
+# include "ft_types_array_ptrdiff.h"
 
 typedef struct s_ft_types_slist_ptrdiff_node
 {
@@ -27,5 +28,9 @@ typedef struct s_ft_types_slist_ptrdiff
 	t_ft_types_slist_ptrdiff_node	*tail;
 	size_t							length;
 }	t_ft_types_slist_ptrdiff;
+
+t_err	ft_types_slist_ptrdiff_to_array(
+			t_ft_types_slist_ptrdiff *list,
+			t_ft_types_array_ptrdiff *out);
 
 #endif

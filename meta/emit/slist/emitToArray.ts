@@ -1,19 +1,13 @@
 import { promises as fs } from "fs";
 import { header } from "../../common/header";
 import { includes } from "../../util/includes";
-import { repeat } from "../../util/string/repeat";
-import { typedef } from "../../util/typedef";
 import { variableDecls } from "../../util/variableDecls";
 
 export function toArrayPrototypeDependencies(typename: string): string[] {
   return [`"ft_types_array_${typename}.h"`];
 }
 
-export function toArrayPrototype(
-  typename: string,
-  originalType = typename,
-  dependencies: string[] = []
-): string {
+export function toArrayPrototype(typename: string): string {
   return `t_err\tft_types_slist_${typename}_to_array(
 \t\t\tt_ft_types_slist_${typename} *list,
 \t\t\tt_ft_types_array_${typename} *out);`;
@@ -36,8 +30,6 @@ ${includes(
   `"ft_types_slist_${typename}.h"`,
   ...dependencies
 )}
-
-${toArrayPrototype(typename)}
 
 t_err\tft_types_slist_${typename}_to_array(
 \tt_ft_types_slist_${typename} *list,

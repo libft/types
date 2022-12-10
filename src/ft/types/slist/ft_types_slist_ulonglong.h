@@ -14,6 +14,7 @@
 # define FT_TYPES_SLIST_ULONGLONG_H
 
 # include <stddef.h>
+# include "ft_types_array_ulonglong.h"
 
 typedef struct s_ft_types_slist_ulonglong_node
 {
@@ -27,5 +28,9 @@ typedef struct s_ft_types_slist_ulonglong
 	t_ft_types_slist_ulonglong_node	*tail;
 	size_t							length;
 }	t_ft_types_slist_ulonglong;
+
+t_err	ft_types_slist_ulonglong_to_array(
+			t_ft_types_slist_ulonglong *list,
+			t_ft_types_array_ulonglong *out);
 
 #endif
