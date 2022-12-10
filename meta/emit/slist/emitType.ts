@@ -14,6 +14,7 @@ import {
 import { initPrototype, initPrototypeDependencies } from "./emitInit";
 import { pushPrototype, pushPrototypeDependencies } from "./emitPush";
 import { toArrayPrototype, toArrayPrototypeDependencies } from "./emitToArray";
+import { unshiftPrototype, unshiftPrototypeDependencies } from "./emitUnshift";
 
 export async function emitType(
   typename: string,
@@ -32,6 +33,7 @@ ${includesInHeader(
   ...toArrayPrototypeDependencies(typename),
   ...fromArrayPrototypeDependencies(typename),
   ...pushPrototypeDependencies(typename),
+  ...unshiftPrototypeDependencies(typename),
   ...dependencies
 )}
 
@@ -51,6 +53,7 @@ ${clearPrototype(typename)}
 ${toArrayPrototype(typename)}
 ${fromArrayPrototype(typename)}
 ${pushPrototype(typename, originalType)}
+${unshiftPrototype(typename, originalType)}
 
 ${headerProtectionEnd}
 `

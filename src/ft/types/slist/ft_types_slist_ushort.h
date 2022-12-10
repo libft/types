@@ -43,5 +43,8 @@ t_err	ft_types_slist_ushort_from_array(
 t_err	ft_types_slist_ushort_push(
 			t_ft_types_slist_ushort *list,
 			unsigned short value);
+t_err	ft_types_slist_ushort_unshift(
+			t_ft_types_slist_ushort *list,
+			unsigned short value);
 
 #endif

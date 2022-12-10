@@ -43,5 +43,8 @@ t_err	ft_types_slist_float_from_array(
 t_err	ft_types_slist_float_push(
 			t_ft_types_slist_float *list,
 			float value);
+t_err	ft_types_slist_float_unshift(
+			t_ft_types_slist_float *list,
+			float value);
 
 #endif

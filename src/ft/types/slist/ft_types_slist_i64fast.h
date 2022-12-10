@@ -44,5 +44,8 @@ t_err	ft_types_slist_i64fast_from_array(
 t_err	ft_types_slist_i64fast_push(
 			t_ft_types_slist_i64fast *list,
 			int_fast64_t value);
+t_err	ft_types_slist_i64fast_unshift(
+			t_ft_types_slist_i64fast *list,
+			int_fast64_t value);
 
 #endif

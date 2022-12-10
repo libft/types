@@ -44,5 +44,8 @@ t_err	ft_types_slist_uptr_from_array(
 t_err	ft_types_slist_uptr_push(
 			t_ft_types_slist_uptr *list,
 			uintptr_t value);
+t_err	ft_types_slist_uptr_unshift(
+			t_ft_types_slist_uptr *list,
+			uintptr_t value);
 
 #endif

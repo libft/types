@@ -43,5 +43,8 @@ t_err	ft_types_slist_uchar_from_array(
 t_err	ft_types_slist_uchar_push(
 			t_ft_types_slist_uchar *list,
 			unsigned char value);
+t_err	ft_types_slist_uchar_unshift(
+			t_ft_types_slist_uchar *list,
+			unsigned char value);
 
 #endif

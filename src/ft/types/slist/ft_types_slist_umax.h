@@ -44,5 +44,8 @@ t_err	ft_types_slist_umax_from_array(
 t_err	ft_types_slist_umax_push(
 			t_ft_types_slist_umax *list,
 			uintmax_t value);
+t_err	ft_types_slist_umax_unshift(
+			t_ft_types_slist_umax *list,
+			uintmax_t value);
 
 #endif

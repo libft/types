@@ -44,5 +44,8 @@ t_err	ft_types_slist_u64_from_array(
 t_err	ft_types_slist_u64_push(
 			t_ft_types_slist_u64 *list,
 			uint64_t value);
+t_err	ft_types_slist_u64_unshift(
+			t_ft_types_slist_u64 *list,
+			uint64_t value);
 
 #endif

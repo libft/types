@@ -43,5 +43,8 @@ t_err	ft_types_slist_ulong_from_array(
 t_err	ft_types_slist_ulong_push(
 			t_ft_types_slist_ulong *list,
 			unsigned long value);
+t_err	ft_types_slist_ulong_unshift(
+			t_ft_types_slist_ulong *list,
+			unsigned long value);
 
 #endif

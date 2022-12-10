@@ -43,5 +43,8 @@ t_err	ft_types_slist_schar_from_array(
 t_err	ft_types_slist_schar_push(
 			t_ft_types_slist_schar *list,
 			signed char value);
+t_err	ft_types_slist_schar_unshift(
+			t_ft_types_slist_schar *list,
+			signed char value);
 
 #endif

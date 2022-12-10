@@ -44,5 +44,8 @@ t_err	ft_types_slist_i8least_from_array(
 t_err	ft_types_slist_i8least_push(
 			t_ft_types_slist_i8least *list,
 			int_least8_t value);
+t_err	ft_types_slist_i8least_unshift(
+			t_ft_types_slist_i8least *list,
+			int_least8_t value);
 
 #endif

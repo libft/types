@@ -43,5 +43,8 @@ t_err	ft_types_slist_long_double_from_array(
 t_err	ft_types_slist_long_double_push(
 			t_ft_types_slist_long_double *list,
 			long double value);
+t_err	ft_types_slist_long_double_unshift(
+			t_ft_types_slist_long_double *list,
+			long double value);
 
 #endif

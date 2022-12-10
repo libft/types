@@ -44,5 +44,8 @@ t_err	ft_types_slist_u32least_from_array(
 t_err	ft_types_slist_u32least_push(
 			t_ft_types_slist_u32least *list,
 			uint_least32_t value);
+t_err	ft_types_slist_u32least_unshift(
+			t_ft_types_slist_u32least *list,
+			uint_least32_t value);
 
 #endif

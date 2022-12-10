@@ -44,5 +44,8 @@ t_err	ft_types_slist_i32_from_array(
 t_err	ft_types_slist_i32_push(
 			t_ft_types_slist_i32 *list,
 			int32_t value);
+t_err	ft_types_slist_i32_unshift(
+			t_ft_types_slist_i32 *list,
+			int32_t value);
 
 #endif

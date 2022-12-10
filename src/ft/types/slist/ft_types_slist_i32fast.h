@@ -44,5 +44,8 @@ t_err	ft_types_slist_i32fast_from_array(
 t_err	ft_types_slist_i32fast_push(
 			t_ft_types_slist_i32fast *list,
 			int_fast32_t value);
+t_err	ft_types_slist_i32fast_unshift(
+			t_ft_types_slist_i32fast *list,
+			int_fast32_t value);
 
 #endif

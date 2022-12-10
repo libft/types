@@ -43,5 +43,8 @@ t_err	ft_types_slist_long_from_array(
 t_err	ft_types_slist_long_push(
 			t_ft_types_slist_long *list,
 			signed long value);
+t_err	ft_types_slist_long_unshift(
+			t_ft_types_slist_long *list,
+			signed long value);
 
 #endif

@@ -43,5 +43,8 @@ t_err	ft_types_slist_int_from_array(
 t_err	ft_types_slist_int_push(
 			t_ft_types_slist_int *list,
 			signed int value);
+t_err	ft_types_slist_int_unshift(
+			t_ft_types_slist_int *list,
+			signed int value);
 
 #endif

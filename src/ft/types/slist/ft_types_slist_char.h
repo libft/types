@@ -43,5 +43,8 @@ t_err	ft_types_slist_char_from_array(
 t_err	ft_types_slist_char_push(
 			t_ft_types_slist_char *list,
 			char value);
+t_err	ft_types_slist_char_unshift(
+			t_ft_types_slist_char *list,
+			char value);
 
 #endif

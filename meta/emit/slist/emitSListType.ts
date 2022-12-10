@@ -4,6 +4,7 @@ import { emitInit } from "./emitInit";
 import { emitPush } from "./emitPush";
 import { emitToArray } from "./emitToArray";
 import { emitType } from "./emitType";
+import { emitUnshift } from "./emitUnshift";
 
 export async function emitSListType(
   typename: string,
@@ -16,4 +17,5 @@ export async function emitSListType(
   await emitToArray(typename, originalType, dependencies);
   await emitFromArray(typename, originalType, dependencies);
   await emitPush(typename, originalType, dependencies);
+  await emitUnshift(typename, originalType, dependencies);
 }

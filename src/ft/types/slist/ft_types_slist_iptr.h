@@ -44,5 +44,8 @@ t_err	ft_types_slist_iptr_from_array(
 t_err	ft_types_slist_iptr_push(
 			t_ft_types_slist_iptr *list,
 			intptr_t value);
+t_err	ft_types_slist_iptr_unshift(
+			t_ft_types_slist_iptr *list,
+			intptr_t value);
 
 #endif

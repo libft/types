@@ -44,5 +44,8 @@ t_err	ft_types_slist_u16_from_array(
 t_err	ft_types_slist_u16_push(
 			t_ft_types_slist_u16 *list,
 			uint16_t value);
+t_err	ft_types_slist_u16_unshift(
+			t_ft_types_slist_u16 *list,
+			uint16_t value);
 
 #endif
