@@ -31,6 +31,8 @@ typedef struct s_ft_types_slist_umax
 	size_t						length;
 }	t_ft_types_slist_umax;
 
+void	ft_types_slist_umax_init(
+			t_ft_types_slist_umax *list);
 void	ft_types_slist_umax_clear(
 			t_ft_types_slist_umax *list);
 t_err	ft_types_slist_umax_to_array(

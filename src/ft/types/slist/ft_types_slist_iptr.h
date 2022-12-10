@@ -31,6 +31,8 @@ typedef struct s_ft_types_slist_iptr
 	size_t						length;
 }	t_ft_types_slist_iptr;
 
+void	ft_types_slist_iptr_init(
+			t_ft_types_slist_iptr *list);
 void	ft_types_slist_iptr_clear(
 			t_ft_types_slist_iptr *list);
 t_err	ft_types_slist_iptr_to_array(

@@ -31,6 +31,8 @@ typedef struct s_ft_types_slist_i8
 	size_t						length;
 }	t_ft_types_slist_i8;
 
+void	ft_types_slist_i8_init(
+			t_ft_types_slist_i8 *list);
 void	ft_types_slist_i8_clear(
 			t_ft_types_slist_i8 *list);
 t_err	ft_types_slist_i8_to_array(

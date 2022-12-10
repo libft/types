@@ -30,6 +30,8 @@ typedef struct s_ft_types_slist_ptrdiff
 	size_t							length;
 }	t_ft_types_slist_ptrdiff;
 
+void	ft_types_slist_ptrdiff_init(
+			t_ft_types_slist_ptrdiff *list);
 void	ft_types_slist_ptrdiff_clear(
 			t_ft_types_slist_ptrdiff *list);
 t_err	ft_types_slist_ptrdiff_to_array(

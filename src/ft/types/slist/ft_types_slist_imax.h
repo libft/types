@@ -31,6 +31,8 @@ typedef struct s_ft_types_slist_imax
 	size_t						length;
 }	t_ft_types_slist_imax;
 
+void	ft_types_slist_imax_init(
+			t_ft_types_slist_imax *list);
 void	ft_types_slist_imax_clear(
 			t_ft_types_slist_imax *list);
 t_err	ft_types_slist_imax_to_array(

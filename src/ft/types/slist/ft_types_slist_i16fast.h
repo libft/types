@@ -31,6 +31,8 @@ typedef struct s_ft_types_slist_i16fast
 	size_t							length;
 }	t_ft_types_slist_i16fast;
 
+void	ft_types_slist_i16fast_init(
+			t_ft_types_slist_i16fast *list);
 void	ft_types_slist_i16fast_clear(
 			t_ft_types_slist_i16fast *list);
 t_err	ft_types_slist_i16fast_to_array(

@@ -30,6 +30,8 @@ typedef struct s_ft_types_slist_double
 	size_t							length;
 }	t_ft_types_slist_double;
 
+void	ft_types_slist_double_init(
+			t_ft_types_slist_double *list);
 void	ft_types_slist_double_clear(
 			t_ft_types_slist_double *list);
 t_err	ft_types_slist_double_to_array(

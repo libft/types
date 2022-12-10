@@ -30,6 +30,8 @@ typedef struct s_ft_types_slist_uchar
 	size_t						length;
 }	t_ft_types_slist_uchar;
 
+void	ft_types_slist_uchar_init(
+			t_ft_types_slist_uchar *list);
 void	ft_types_slist_uchar_clear(
 			t_ft_types_slist_uchar *list);
 t_err	ft_types_slist_uchar_to_array(

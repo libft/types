@@ -31,6 +31,8 @@ typedef struct s_ft_types_slist_uptr
 	size_t						length;
 }	t_ft_types_slist_uptr;
 
+void	ft_types_slist_uptr_init(
+			t_ft_types_slist_uptr *list);
 void	ft_types_slist_uptr_clear(
 			t_ft_types_slist_uptr *list);
 t_err	ft_types_slist_uptr_to_array(

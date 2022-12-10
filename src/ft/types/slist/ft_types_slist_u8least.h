@@ -31,6 +31,8 @@ typedef struct s_ft_types_slist_u8least
 	size_t							length;
 }	t_ft_types_slist_u8least;
 
+void	ft_types_slist_u8least_init(
+			t_ft_types_slist_u8least *list);
 void	ft_types_slist_u8least_clear(
 			t_ft_types_slist_u8least *list);
 t_err	ft_types_slist_u8least_to_array(

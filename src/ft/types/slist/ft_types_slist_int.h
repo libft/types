@@ -30,6 +30,8 @@ typedef struct s_ft_types_slist_int
 	size_t						length;
 }	t_ft_types_slist_int;
 
+void	ft_types_slist_int_init(
+			t_ft_types_slist_int *list);
 void	ft_types_slist_int_clear(
 			t_ft_types_slist_int *list);
 t_err	ft_types_slist_int_to_array(
