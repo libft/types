@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_iptr.h"
 #include "wrap.h"
 

@@ -13,13 +13,12 @@
 #ifndef FT_TYPES_ARRAY_U32LEAST_H
 # define FT_TYPES_ARRAY_U32LEAST_H
 
-# include <stddef.h>
-# include <stdint.h>
+# include "ft_types.h"
 
 typedef struct s_ft_types_array_u32least
 {
-	uint_least32_t	*element;
-	size_t			count;
+	t_u32least	*element;
+	size_t		count;
 }	t_ft_types_array_u32least;
 
 #endif

@@ -13,15 +13,13 @@
 #ifndef FT_TYPES_SLIST_IMAX_H
 # define FT_TYPES_SLIST_IMAX_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "ft_types_array_imax.h"
 # include "ft_types.h"
 
 typedef struct s_ft_types_slist_imax_node
 {
 	struct s_ft_types_slist_imax_node	*next;
-	intmax_t							value;
+	t_imax								value;
 }	t_ft_types_slist_imax_node;
 
 typedef struct s_ft_types_slist_imax
@@ -43,12 +41,12 @@ t_err	ft_types_slist_imax_from_array(
 			t_ft_types_slist_imax *out);
 t_err	ft_types_slist_imax_push(
 			t_ft_types_slist_imax *list,
-			intmax_t value);
+			t_imax value);
 t_err	ft_types_slist_imax_unshift(
 			t_ft_types_slist_imax *list,
-			intmax_t value);
+			t_imax value);
 bool	ft_types_slist_imax_shift(
 			t_ft_types_slist_imax *list,
-			intmax_t *out);
+			t_imax *out);
 
 #endif

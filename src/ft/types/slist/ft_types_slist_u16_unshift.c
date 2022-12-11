@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u16.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_u16_unshift(
 	t_ft_types_slist_u16 *list,
-	uint16_t value
+	t_u16 value
 )
 {
 	t_ft_types_slist_u16_node	*node;

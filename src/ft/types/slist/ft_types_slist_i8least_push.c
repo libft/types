@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_i8least.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_i8least_push(
 	t_ft_types_slist_i8least *list,
-	int_least8_t value
+	t_i8least value
 )
 {
 	t_ft_types_slist_i8least_node	*node;

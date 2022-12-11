@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_i16least.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_i16least_shift(
 	t_ft_types_slist_i16least *list,
-	int_least16_t *out
+	t_i16least *out
 )
 {
 	t_ft_types_slist_i16least_node	*node;

@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_i8fast.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_i8fast_push(
 	t_ft_types_slist_i8fast *list,
-	int_fast8_t value
+	t_i8fast value
 )
 {
 	t_ft_types_slist_i8fast_node	*node;

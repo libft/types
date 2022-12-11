@@ -13,13 +13,12 @@
 #ifndef FT_TYPES_ARRAY_UPTR_H
 # define FT_TYPES_ARRAY_UPTR_H
 
-# include <stddef.h>
-# include <stdint.h>
+# include "ft_types.h"
 
 typedef struct s_ft_types_array_uptr
 {
-	uintptr_t	*element;
-	size_t		count;
+	t_uptr	*element;
+	size_t	count;
 }	t_ft_types_array_uptr;
 
 #endif

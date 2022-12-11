@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u8fast.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_u8fast_unshift(
 	t_ft_types_slist_u8fast *list,
-	uint_fast8_t value
+	t_u8fast value
 )
 {
 	t_ft_types_slist_u8fast_node	*node;

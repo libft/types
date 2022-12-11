@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u16least.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_u16least_push(
 	t_ft_types_slist_u16least *list,
-	uint_least16_t value
+	t_u16least value
 )
 {
 	t_ft_types_slist_u16least_node	*node;

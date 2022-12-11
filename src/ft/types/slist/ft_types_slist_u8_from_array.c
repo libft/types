@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include <stdlib.h>
 #include "ft_types_array_u8.h"
 #include "ft_types_slist_u8.h"

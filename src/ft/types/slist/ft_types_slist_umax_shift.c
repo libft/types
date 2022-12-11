@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_umax.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_umax_shift(
 	t_ft_types_slist_umax *list,
-	uintmax_t *out
+	t_umax *out
 )
 {
 	t_ft_types_slist_umax_node	*node;

@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_imax.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_imax_shift(
 	t_ft_types_slist_imax *list,
-	intmax_t *out
+	t_imax *out
 )
 {
 	t_ft_types_slist_imax_node	*node;

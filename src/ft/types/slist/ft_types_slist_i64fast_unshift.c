@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_i64fast.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_i64fast_unshift(
 	t_ft_types_slist_i64fast *list,
-	int_fast64_t value
+	t_i64fast value
 )
 {
 	t_ft_types_slist_i64fast_node	*node;

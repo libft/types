@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_memory.h"
 #include "ft_types_array_i32fast.h"
 #include "ft_types_slist_i32fast.h"
@@ -27,7 +26,7 @@ t_err	ft_types_slist_i32fast_to_array(
 
 	result.element = ft_memory_allocate(
 			list->length,
-			sizeof(int_fast32_t));
+			sizeof(t_i32fast));
 	if (!result.element)
 		return (true);
 	result.count = list->length;

@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_uptr.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_uptr_shift(
 	t_ft_types_slist_uptr *list,
-	uintptr_t *out
+	t_uptr *out
 )
 {
 	t_ft_types_slist_uptr_node	*node;

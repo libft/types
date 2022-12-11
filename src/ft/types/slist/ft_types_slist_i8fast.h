@@ -13,15 +13,13 @@
 #ifndef FT_TYPES_SLIST_I8FAST_H
 # define FT_TYPES_SLIST_I8FAST_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "ft_types_array_i8fast.h"
 # include "ft_types.h"
 
 typedef struct s_ft_types_slist_i8fast_node
 {
 	struct s_ft_types_slist_i8fast_node	*next;
-	int_fast8_t							value;
+	t_i8fast							value;
 }	t_ft_types_slist_i8fast_node;
 
 typedef struct s_ft_types_slist_i8fast
@@ -43,12 +41,12 @@ t_err	ft_types_slist_i8fast_from_array(
 			t_ft_types_slist_i8fast *out);
 t_err	ft_types_slist_i8fast_push(
 			t_ft_types_slist_i8fast *list,
-			int_fast8_t value);
+			t_i8fast value);
 t_err	ft_types_slist_i8fast_unshift(
 			t_ft_types_slist_i8fast *list,
-			int_fast8_t value);
+			t_i8fast value);
 bool	ft_types_slist_i8fast_shift(
 			t_ft_types_slist_i8fast *list,
-			int_fast8_t *out);
+			t_i8fast *out);
 
 #endif

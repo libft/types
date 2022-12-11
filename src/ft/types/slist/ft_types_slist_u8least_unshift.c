@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u8least.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_u8least_unshift(
 	t_ft_types_slist_u8least *list,
-	uint_least8_t value
+	t_u8least value
 )
 {
 	t_ft_types_slist_u8least_node	*node;

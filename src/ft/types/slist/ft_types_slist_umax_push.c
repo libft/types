@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_umax.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_umax_push(
 	t_ft_types_slist_umax *list,
-	uintmax_t value
+	t_umax value
 )
 {
 	t_ft_types_slist_umax_node	*node;

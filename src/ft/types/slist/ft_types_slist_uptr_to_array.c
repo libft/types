@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_memory.h"
 #include "ft_types_array_uptr.h"
 #include "ft_types_slist_uptr.h"
@@ -27,7 +26,7 @@ t_err	ft_types_slist_uptr_to_array(
 
 	result.element = ft_memory_allocate(
 			list->length,
-			sizeof(uintptr_t));
+			sizeof(t_uptr));
 	if (!result.element)
 		return (true);
 	result.count = list->length;

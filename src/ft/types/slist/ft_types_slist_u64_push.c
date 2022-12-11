@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u64.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_u64_push(
 	t_ft_types_slist_u64 *list,
-	uint64_t value
+	t_u64 value
 )
 {
 	t_ft_types_slist_u64_node	*node;

@@ -13,15 +13,13 @@
 #ifndef FT_TYPES_SLIST_UMAX_H
 # define FT_TYPES_SLIST_UMAX_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "ft_types_array_umax.h"
 # include "ft_types.h"
 
 typedef struct s_ft_types_slist_umax_node
 {
 	struct s_ft_types_slist_umax_node	*next;
-	uintmax_t							value;
+	t_umax								value;
 }	t_ft_types_slist_umax_node;
 
 typedef struct s_ft_types_slist_umax
@@ -43,12 +41,12 @@ t_err	ft_types_slist_umax_from_array(
 			t_ft_types_slist_umax *out);
 t_err	ft_types_slist_umax_push(
 			t_ft_types_slist_umax *list,
-			uintmax_t value);
+			t_umax value);
 t_err	ft_types_slist_umax_unshift(
 			t_ft_types_slist_umax *list,
-			uintmax_t value);
+			t_umax value);
 bool	ft_types_slist_umax_shift(
 			t_ft_types_slist_umax *list,
-			uintmax_t *out);
+			t_umax *out);
 
 #endif

@@ -13,15 +13,13 @@
 #ifndef FT_TYPES_SLIST_IPTR_H
 # define FT_TYPES_SLIST_IPTR_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "ft_types_array_iptr.h"
 # include "ft_types.h"
 
 typedef struct s_ft_types_slist_iptr_node
 {
 	struct s_ft_types_slist_iptr_node	*next;
-	intptr_t							value;
+	t_iptr								value;
 }	t_ft_types_slist_iptr_node;
 
 typedef struct s_ft_types_slist_iptr
@@ -43,12 +41,12 @@ t_err	ft_types_slist_iptr_from_array(
 			t_ft_types_slist_iptr *out);
 t_err	ft_types_slist_iptr_push(
 			t_ft_types_slist_iptr *list,
-			intptr_t value);
+			t_iptr value);
 t_err	ft_types_slist_iptr_unshift(
 			t_ft_types_slist_iptr *list,
-			intptr_t value);
+			t_iptr value);
 bool	ft_types_slist_iptr_shift(
 			t_ft_types_slist_iptr *list,
-			intptr_t *out);
+			t_iptr *out);
 
 #endif

@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u32fast.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_u32fast_shift(
 	t_ft_types_slist_u32fast *list,
-	uint_fast32_t *out
+	t_u32fast *out
 )
 {
 	t_ft_types_slist_u32fast_node	*node;

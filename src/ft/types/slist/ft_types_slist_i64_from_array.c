@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include <stdlib.h>
 #include "ft_types_array_i64.h"
 #include "ft_types_slist_i64.h"

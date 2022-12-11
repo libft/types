@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u16fast.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_u16fast_push(
 	t_ft_types_slist_u16fast *list,
-	uint_fast16_t value
+	t_u16fast value
 )
 {
 	t_ft_types_slist_u16fast_node	*node;

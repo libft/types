@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u32.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_u32_push(
 	t_ft_types_slist_u32 *list,
-	uint32_t value
+	t_u32 value
 )
 {
 	t_ft_types_slist_u32_node	*node;

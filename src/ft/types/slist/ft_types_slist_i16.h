@@ -13,15 +13,13 @@
 #ifndef FT_TYPES_SLIST_I16_H
 # define FT_TYPES_SLIST_I16_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "ft_types_array_i16.h"
 # include "ft_types.h"
 
 typedef struct s_ft_types_slist_i16_node
 {
 	struct s_ft_types_slist_i16_node	*next;
-	int16_t								value;
+	t_i16								value;
 }	t_ft_types_slist_i16_node;
 
 typedef struct s_ft_types_slist_i16
@@ -43,12 +41,12 @@ t_err	ft_types_slist_i16_from_array(
 			t_ft_types_slist_i16 *out);
 t_err	ft_types_slist_i16_push(
 			t_ft_types_slist_i16 *list,
-			int16_t value);
+			t_i16 value);
 t_err	ft_types_slist_i16_unshift(
 			t_ft_types_slist_i16 *list,
-			int16_t value);
+			t_i16 value);
 bool	ft_types_slist_i16_shift(
 			t_ft_types_slist_i16 *list,
-			int16_t *out);
+			t_i16 *out);
 
 #endif

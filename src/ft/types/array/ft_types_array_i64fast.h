@@ -13,13 +13,12 @@
 #ifndef FT_TYPES_ARRAY_I64FAST_H
 # define FT_TYPES_ARRAY_I64FAST_H
 
-# include <stddef.h>
-# include <stdint.h>
+# include "ft_types.h"
 
 typedef struct s_ft_types_array_i64fast
 {
-	int_fast64_t	*element;
-	size_t			count;
+	t_i64fast	*element;
+	size_t		count;
 }	t_ft_types_array_i64fast;
 
 #endif

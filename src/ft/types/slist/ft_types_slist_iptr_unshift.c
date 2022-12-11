@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_iptr.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_iptr_unshift(
 	t_ft_types_slist_iptr *list,
-	intptr_t value
+	t_iptr value
 )
 {
 	t_ft_types_slist_iptr_node	*node;

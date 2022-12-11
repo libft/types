@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u64least.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_u64least_unshift(
 	t_ft_types_slist_u64least *list,
-	uint_least64_t value
+	t_u64least value
 )
 {
 	t_ft_types_slist_u64least_node	*node;

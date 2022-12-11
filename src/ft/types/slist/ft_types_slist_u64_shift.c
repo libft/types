@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_u64.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_u64_shift(
 	t_ft_types_slist_u64 *list,
-	uint64_t *out
+	t_u64 *out
 )
 {
 	t_ft_types_slist_u64_node	*node;

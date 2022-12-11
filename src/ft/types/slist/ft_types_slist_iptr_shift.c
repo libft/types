@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_iptr.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_iptr_shift(
 	t_ft_types_slist_iptr *list,
-	intptr_t *out
+	t_iptr *out
 )
 {
 	t_ft_types_slist_iptr_node	*node;

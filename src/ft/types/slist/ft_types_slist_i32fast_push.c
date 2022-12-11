@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_i32fast.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_i32fast_push(
 	t_ft_types_slist_i32fast *list,
-	int_fast32_t value
+	t_i32fast value
 )
 {
 	t_ft_types_slist_i32fast_node	*node;

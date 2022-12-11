@@ -10,14 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_types_slist_i8.h"
 #include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_i8_shift(
 	t_ft_types_slist_i8 *list,
-	int8_t *out
+	t_i8 *out
 )
 {
 	t_ft_types_slist_i8_node	*node;

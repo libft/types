@@ -13,15 +13,13 @@
 #ifndef FT_TYPES_SLIST_I64_H
 # define FT_TYPES_SLIST_I64_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "ft_types_array_i64.h"
 # include "ft_types.h"
 
 typedef struct s_ft_types_slist_i64_node
 {
 	struct s_ft_types_slist_i64_node	*next;
-	int64_t								value;
+	t_i64								value;
 }	t_ft_types_slist_i64_node;
 
 typedef struct s_ft_types_slist_i64
@@ -43,12 +41,12 @@ t_err	ft_types_slist_i64_from_array(
 			t_ft_types_slist_i64 *out);
 t_err	ft_types_slist_i64_push(
 			t_ft_types_slist_i64 *list,
-			int64_t value);
+			t_i64 value);
 t_err	ft_types_slist_i64_unshift(
 			t_ft_types_slist_i64 *list,
-			int64_t value);
+			t_i64 value);
 bool	ft_types_slist_i64_shift(
 			t_ft_types_slist_i64 *list,
-			int64_t *out);
+			t_i64 *out);
 
 #endif

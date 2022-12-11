@@ -13,15 +13,13 @@
 #ifndef FT_TYPES_SLIST_I32LEAST_H
 # define FT_TYPES_SLIST_I32LEAST_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "ft_types_array_i32least.h"
 # include "ft_types.h"
 
 typedef struct s_ft_types_slist_i32least_node
 {
 	struct s_ft_types_slist_i32least_node	*next;
-	int_least32_t							value;
+	t_i32least								value;
 }	t_ft_types_slist_i32least_node;
 
 typedef struct s_ft_types_slist_i32least
@@ -43,12 +41,12 @@ t_err	ft_types_slist_i32least_from_array(
 			t_ft_types_slist_i32least *out);
 t_err	ft_types_slist_i32least_push(
 			t_ft_types_slist_i32least *list,
-			int_least32_t value);
+			t_i32least value);
 t_err	ft_types_slist_i32least_unshift(
 			t_ft_types_slist_i32least *list,
-			int_least32_t value);
+			t_i32least value);
 bool	ft_types_slist_i32least_shift(
 			t_ft_types_slist_i32least *list,
-			int_least32_t *out);
+			t_i32least *out);
 
 #endif

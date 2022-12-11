@@ -13,15 +13,13 @@
 #ifndef FT_TYPES_SLIST_UPTR_H
 # define FT_TYPES_SLIST_UPTR_H
 
-# include <stddef.h>
-# include <stdint.h>
 # include "ft_types_array_uptr.h"
 # include "ft_types.h"
 
 typedef struct s_ft_types_slist_uptr_node
 {
 	struct s_ft_types_slist_uptr_node	*next;
-	uintptr_t							value;
+	t_uptr								value;
 }	t_ft_types_slist_uptr_node;
 
 typedef struct s_ft_types_slist_uptr
@@ -43,12 +41,12 @@ t_err	ft_types_slist_uptr_from_array(
 			t_ft_types_slist_uptr *out);
 t_err	ft_types_slist_uptr_push(
 			t_ft_types_slist_uptr *list,
-			uintptr_t value);
+			t_uptr value);
 t_err	ft_types_slist_uptr_unshift(
 			t_ft_types_slist_uptr *list,
-			uintptr_t value);
+			t_uptr value);
 bool	ft_types_slist_uptr_shift(
 			t_ft_types_slist_uptr *list,
-			uintptr_t *out);
+			t_uptr *out);
 
 #endif

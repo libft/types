@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdint.h>
 #include "ft_memory.h"
 #include "ft_types_array_imax.h"
 #include "ft_types_slist_imax.h"
@@ -27,7 +26,7 @@ t_err	ft_types_slist_imax_to_array(
 
 	result.element = ft_memory_allocate(
 			list->length,
-			sizeof(intmax_t));
+			sizeof(t_imax));
 	if (!result.element)
 		return (true);
 	result.count = list->length;
