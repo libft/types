@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_u64.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 bool	ft_types_slist_u64_shift(
 	t_ft_types_slist_u64 *list,
@@ -30,6 +30,6 @@ bool	ft_types_slist_u64_shift(
 		list->tail = NULL;
 	list->length--;
 	*out = node->value;
-	free(node);
+	wrap_free(node);
 	return (true);
 }

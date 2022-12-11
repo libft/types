@@ -21,7 +21,7 @@ export async function emitClear(
   await fs.writeFile(
     `src/ft/types/slist/ft_types_slist_${typename}_clear.c`,
     `${header}
-${includes("<stdlib.h>", `"ft_types_slist_${typename}.h"`, ...dependencies)}
+${includes('"wrap.h"', `"ft_types_slist_${typename}.h"`, ...dependencies)}
 
 void\tft_types_slist_${typename}_clear(
 \tt_ft_types_slist_${typename} *list
@@ -35,7 +35,7 @@ ${variableDecls([
 \t{
 \t\tnode_to_free = list->head;
 \t\tlist->head = node_to_free->next;
-\t\tfree(node_to_free);
+\t\twrap_free(node_to_free);
 \t}
 \tlist->tail = NULL;
 }

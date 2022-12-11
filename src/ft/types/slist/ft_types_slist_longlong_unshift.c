@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_types_slist_longlong.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_longlong_unshift(
 	t_ft_types_slist_longlong *list,
@@ -21,7 +21,7 @@ t_err	ft_types_slist_longlong_unshift(
 {
 	t_ft_types_slist_longlong_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_longlong));
+	node = wrap_malloc(sizeof(t_ft_types_slist_longlong));
 	if (!node)
 		return (true);
 	node->next = list->head;

@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_u32least.h"
+#include "wrap.h"
 
 void	ft_types_slist_u32least_clear(
 	t_ft_types_slist_u32least *list
@@ -24,7 +24,7 @@ void	ft_types_slist_u32least_clear(
 	{
 		node_to_free = list->head;
 		list->head = node_to_free->next;
-		free(node_to_free);
+		wrap_free(node_to_free);
 	}
 	list->tail = NULL;
 }

@@ -26,7 +26,7 @@ export async function emitUnshift(
     `src/ft/types/slist/ft_types_slist_${typename}_unshift.c`,
     `${header}
 ${includes(
-  "<stdlib.h>",
+  '"wrap.h"',
   '"ft_types.h"',
   `"ft_types_slist_${typename}.h"`,
   ...dependencies
@@ -39,7 +39,7 @@ t_err\tft_types_slist_${typename}_unshift(
 {
 ${variableDecls([{ type: `t_ft_types_slist_${typename}_node`, name: "*node" }])}
 
-\tnode = malloc(sizeof(t_ft_types_slist_${typename}));
+\tnode = wrap_malloc(sizeof(t_ft_types_slist_${typename}));
 \tif (!node)
 \t\treturn (true);
 \tnode->next = list->head;

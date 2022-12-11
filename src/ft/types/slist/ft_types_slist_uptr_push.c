@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_uptr.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_uptr_push(
 	t_ft_types_slist_uptr *list,
@@ -22,7 +22,7 @@ t_err	ft_types_slist_uptr_push(
 {
 	t_ft_types_slist_uptr_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_uptr));
+	node = wrap_malloc(sizeof(t_ft_types_slist_uptr));
 	if (!node)
 		return (true);
 	node->next = NULL;

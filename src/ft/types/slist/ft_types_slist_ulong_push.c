@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_types_slist_ulong.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_ulong_push(
 	t_ft_types_slist_ulong *list,
@@ -21,7 +21,7 @@ t_err	ft_types_slist_ulong_push(
 {
 	t_ft_types_slist_ulong_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_ulong));
+	node = wrap_malloc(sizeof(t_ft_types_slist_ulong));
 	if (!node)
 		return (true);
 	node->next = NULL;

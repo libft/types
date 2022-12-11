@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_imax.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_imax_push(
 	t_ft_types_slist_imax *list,
@@ -22,7 +22,7 @@ t_err	ft_types_slist_imax_push(
 {
 	t_ft_types_slist_imax_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_imax));
+	node = wrap_malloc(sizeof(t_ft_types_slist_imax));
 	if (!node)
 		return (true);
 	node->next = NULL;

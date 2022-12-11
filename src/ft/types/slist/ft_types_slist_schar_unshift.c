@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_types_slist_schar.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_schar_unshift(
 	t_ft_types_slist_schar *list,
@@ -21,7 +21,7 @@ t_err	ft_types_slist_schar_unshift(
 {
 	t_ft_types_slist_schar_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_schar));
+	node = wrap_malloc(sizeof(t_ft_types_slist_schar));
 	if (!node)
 		return (true);
 	node->next = list->head;

@@ -26,7 +26,7 @@ export async function emitShift(
     `src/ft/types/slist/ft_types_slist_${typename}_shift.c`,
     `${header}
 ${includes(
-  "<stdlib.h>",
+  '"wrap.h"',
   '"ft_types.h"',
   `"ft_types_slist_${typename}.h"`,
   ...dependencies
@@ -47,7 +47,7 @@ ${variableDecls([{ type: `t_ft_types_slist_${typename}_node`, name: "*node" }])}
 \t\tlist->tail = NULL;
 \tlist->length--;
 \t*out = node->value;
-\tfree(node);
+\twrap_free(node);
 \treturn (true);
 }
 `

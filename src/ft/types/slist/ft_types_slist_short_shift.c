@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_types_slist_short.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 bool	ft_types_slist_short_shift(
 	t_ft_types_slist_short *list,
@@ -29,6 +29,6 @@ bool	ft_types_slist_short_shift(
 		list->tail = NULL;
 	list->length--;
 	*out = node->value;
-	free(node);
+	wrap_free(node);
 	return (true);
 }

@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_types_slist_uint.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 bool	ft_types_slist_uint_shift(
 	t_ft_types_slist_uint *list,
@@ -29,6 +29,6 @@ bool	ft_types_slist_uint_shift(
 		list->tail = NULL;
 	list->length--;
 	*out = node->value;
-	free(node);
+	wrap_free(node);
 	return (true);
 }

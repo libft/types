@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_types_slist_schar.h"
+#include "wrap.h"
 
 void	ft_types_slist_schar_clear(
 	t_ft_types_slist_schar *list
@@ -23,7 +23,7 @@ void	ft_types_slist_schar_clear(
 	{
 		node_to_free = list->head;
 		list->head = node_to_free->next;
-		free(node_to_free);
+		wrap_free(node_to_free);
 	}
 	list->tail = NULL;
 }

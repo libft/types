@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_u16fast.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_u16fast_push(
 	t_ft_types_slist_u16fast *list,
@@ -22,7 +22,7 @@ t_err	ft_types_slist_u16fast_push(
 {
 	t_ft_types_slist_u16fast_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_u16fast));
+	node = wrap_malloc(sizeof(t_ft_types_slist_u16fast));
 	if (!node)
 		return (true);
 	node->next = NULL;

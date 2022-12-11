@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_i8fast.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 bool	ft_types_slist_i8fast_shift(
 	t_ft_types_slist_i8fast *list,
@@ -30,6 +30,6 @@ bool	ft_types_slist_i8fast_shift(
 		list->tail = NULL;
 	list->length--;
 	*out = node->value;
-	free(node);
+	wrap_free(node);
 	return (true);
 }

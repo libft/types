@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdlib.h>
 #include "ft_types_slist_ptrdiff.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 bool	ft_types_slist_ptrdiff_shift(
 	t_ft_types_slist_ptrdiff *list,
@@ -30,6 +30,6 @@ bool	ft_types_slist_ptrdiff_shift(
 		list->tail = NULL;
 	list->length--;
 	*out = node->value;
-	free(node);
+	wrap_free(node);
 	return (true);
 }

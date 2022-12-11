@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stdbool.h>
-#include <stdlib.h>
 #include "ft_types_slist_bool.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_bool_unshift(
 	t_ft_types_slist_bool *list,
@@ -22,7 +22,7 @@ t_err	ft_types_slist_bool_unshift(
 {
 	t_ft_types_slist_bool_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_bool));
+	node = wrap_malloc(sizeof(t_ft_types_slist_bool));
 	if (!node)
 		return (true);
 	node->next = list->head;

@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_u32.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_u32_push(
 	t_ft_types_slist_u32 *list,
@@ -22,7 +22,7 @@ t_err	ft_types_slist_u32_push(
 {
 	t_ft_types_slist_u32_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_u32));
+	node = wrap_malloc(sizeof(t_ft_types_slist_u32));
 	if (!node)
 		return (true);
 	node->next = NULL;

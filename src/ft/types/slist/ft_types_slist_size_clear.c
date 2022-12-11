@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdlib.h>
 #include "ft_types_slist_size.h"
+#include "wrap.h"
 
 void	ft_types_slist_size_clear(
 	t_ft_types_slist_size *list
@@ -24,7 +24,7 @@ void	ft_types_slist_size_clear(
 	{
 		node_to_free = list->head;
 		list->head = node_to_free->next;
-		free(node_to_free);
+		wrap_free(node_to_free);
 	}
 	list->tail = NULL;
 }

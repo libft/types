@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdlib.h>
 #include "ft_types_slist_size.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_size_unshift(
 	t_ft_types_slist_size *list,
@@ -22,7 +22,7 @@ t_err	ft_types_slist_size_unshift(
 {
 	t_ft_types_slist_size_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_size));
+	node = wrap_malloc(sizeof(t_ft_types_slist_size));
 	if (!node)
 		return (true);
 	node->next = list->head;

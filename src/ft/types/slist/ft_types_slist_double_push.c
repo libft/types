@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_types_slist_double.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_double_push(
 	t_ft_types_slist_double *list,
@@ -21,7 +21,7 @@ t_err	ft_types_slist_double_push(
 {
 	t_ft_types_slist_double_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_double));
+	node = wrap_malloc(sizeof(t_ft_types_slist_double));
 	if (!node)
 		return (true);
 	node->next = NULL;

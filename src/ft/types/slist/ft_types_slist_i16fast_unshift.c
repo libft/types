@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 
 #include <stdint.h>
-#include <stdlib.h>
 #include "ft_types_slist_i16fast.h"
 #include "ft_types.h"
+#include "wrap.h"
 
 t_err	ft_types_slist_i16fast_unshift(
 	t_ft_types_slist_i16fast *list,
@@ -22,7 +22,7 @@ t_err	ft_types_slist_i16fast_unshift(
 {
 	t_ft_types_slist_i16fast_node	*node;
 
-	node = malloc(sizeof(t_ft_types_slist_i16fast));
+	node = wrap_malloc(sizeof(t_ft_types_slist_i16fast));
 	if (!node)
 		return (true);
 	node->next = list->head;
