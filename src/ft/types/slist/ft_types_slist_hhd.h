@@ -14,7 +14,7 @@
 # define FT_TYPES_SLIST_HHD_H
 
 # include "ft_types_array_hhd.h"
-# include "ft_types.h"
+# include "ft_types_derived.h"
 
 typedef struct s_ft_types_slist_hhd_node
 {

@@ -13,7 +13,6 @@
 #include "ft_memory.h"
 #include "ft_types_array_zu.h"
 #include "ft_types_slist_zu.h"
-#include "ft_types.h"
 
 t_err	ft_types_slist_zu_to_array(
 	t_ft_types_slist_zu *list,

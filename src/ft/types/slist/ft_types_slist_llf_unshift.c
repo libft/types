@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "ft_types_slist_llf.h"
-#include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_llf_unshift(

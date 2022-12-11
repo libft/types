@@ -13,7 +13,6 @@
 #include <stdlib.h>
 #include "ft_types_array_hd.h"
 #include "ft_types_slist_hd.h"
-#include "ft_types.h"
 
 t_err	ft_types_slist_hd_from_array(
 	t_ft_types_array_hd *array,

@@ -4,7 +4,7 @@ import { includes } from "../../util/includes";
 import { variableDecls } from "../../util/variableDecls";
 
 export function pushPrototypeDependencies(_typename: string): string[] {
-  return ['"ft_types.h"'];
+  return [];
 }
 
 export function pushPrototype(
@@ -25,12 +25,7 @@ export async function emitPush(
   await fs.writeFile(
     `src/ft/types/slist/ft_types_slist_${typename}_push.c`,
     `${header}
-${includes(
-  '"wrap.h"',
-  '"ft_types.h"',
-  `"ft_types_slist_${typename}.h"`,
-  ...dependencies
-)}
+${includes('"wrap.h"', `"ft_types_slist_${typename}.h"`, ...dependencies)}
 
 t_err\tft_types_slist_${typename}_push(
 \tt_ft_types_slist_${typename} *list,

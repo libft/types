@@ -28,7 +28,7 @@ export async function emitType(
     `${header}
 ${headerProtectionStart(`ft_types_slist_${typename}`)}
 ${includesInHeader(
-  '"ft_types.h"',
+  '"ft_types_derived.h"',
   ...initPrototypeDependencies(typename),
   ...clearPrototypeDependencies(typename),
   ...toArrayPrototypeDependencies(typename),

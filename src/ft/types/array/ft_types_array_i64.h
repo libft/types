@@ -13,7 +13,7 @@
 #ifndef FT_TYPES_ARRAY_I64_H
 # define FT_TYPES_ARRAY_I64_H
 
-# include "ft_types.h"
+# include "ft_types_derived.h"
 
 typedef struct s_ft_types_array_i64
 {

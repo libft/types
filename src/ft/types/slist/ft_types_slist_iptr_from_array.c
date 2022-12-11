@@ -13,7 +13,6 @@
 #include <stdlib.h>
 #include "ft_types_array_iptr.h"
 #include "ft_types_slist_iptr.h"
-#include "ft_types.h"
 
 t_err	ft_types_slist_iptr_from_array(
 	t_ft_types_array_iptr *array,

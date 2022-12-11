@@ -13,7 +13,6 @@
 #include <stdlib.h>
 #include "ft_types_array_u32.h"
 #include "ft_types_slist_u32.h"
-#include "ft_types.h"
 
 t_err	ft_types_slist_u32_from_array(
 	t_ft_types_array_u32 *array,

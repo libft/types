@@ -24,7 +24,6 @@ export async function emitFromArray(
     `${header}
 ${includes(
   "<stdlib.h>",
-  '"ft_types.h"',
   `"ft_types_array_${typename}.h"`,
   `"ft_types_slist_${typename}.h"`,
   ...dependencies

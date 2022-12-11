@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "ft_types_slist_i8.h"
-#include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_i8_shift(

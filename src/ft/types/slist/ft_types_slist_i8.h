@@ -14,7 +14,7 @@
 # define FT_TYPES_SLIST_I8_H
 
 # include "ft_types_array_i8.h"
-# include "ft_types.h"
+# include "ft_types_derived.h"
 
 typedef struct s_ft_types_slist_i8_node
 {

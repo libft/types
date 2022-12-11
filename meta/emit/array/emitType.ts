@@ -17,7 +17,7 @@ export async function emitType(
     `src/ft/types/array/ft_types_array_${typename}.h`,
     `${header}
 ${headerProtectionStart(`ft_types_array_${typename}`)}
-${includesInHeader('"ft_types.h"', ...dependencies)}
+${includesInHeader('"ft_types_derived.h"', ...dependencies)}
 
 ${typedef(`ft_types_array_${typename}`, [
   { type: originalType, name: "*element" },

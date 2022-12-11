@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "ft_types_slist_f.h"
-#include "ft_types.h"
 #include "wrap.h"
 
 t_err	ft_types_slist_f_push(

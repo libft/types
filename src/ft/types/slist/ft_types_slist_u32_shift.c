@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "ft_types_slist_u32.h"
-#include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_u32_shift(

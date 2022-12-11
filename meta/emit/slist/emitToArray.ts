@@ -4,7 +4,7 @@ import { includes } from "../../util/includes";
 import { variableDecls } from "../../util/variableDecls";
 
 export function toArrayPrototypeDependencies(typename: string): string[] {
-  return ['"ft_types.h"', `"ft_types_array_${typename}.h"`];
+  return [`"ft_types_array_${typename}.h"`];
 }
 
 export function toArrayPrototype(typename: string): string {
@@ -23,7 +23,6 @@ export async function emitToArray(
     `src/ft/types/slist/ft_types_slist_${typename}_to_array.c`,
     `${header}
 ${includes(
-  '"ft_types.h"',
   '"ft_memory.h"',
   `"ft_types_array_${typename}.h"`,
   `"ft_types_slist_${typename}.h"`,

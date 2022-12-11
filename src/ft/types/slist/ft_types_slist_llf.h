@@ -14,7 +14,7 @@
 # define FT_TYPES_SLIST_LLF_H
 
 # include "ft_types_array_llf.h"
-# include "ft_types.h"
+# include "ft_types_derived.h"
 
 typedef struct s_ft_types_slist_llf_node
 {

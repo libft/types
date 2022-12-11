@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "ft_types_slist_ld.h"
-#include "ft_types.h"
 #include "wrap.h"
 
 bool	ft_types_slist_ld_shift(

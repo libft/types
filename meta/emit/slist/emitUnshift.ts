@@ -4,7 +4,7 @@ import { includes } from "../../util/includes";
 import { variableDecls } from "../../util/variableDecls";
 
 export function unshiftPrototypeDependencies(_typename: string): string[] {
-  return ['"ft_types.h"'];
+  return [];
 }
 
 export function unshiftPrototype(
@@ -25,12 +25,7 @@ export async function emitUnshift(
   await fs.writeFile(
     `src/ft/types/slist/ft_types_slist_${typename}_unshift.c`,
     `${header}
-${includes(
-  '"wrap.h"',
-  '"ft_types.h"',
-  `"ft_types_slist_${typename}.h"`,
-  ...dependencies
-)}
+${includes('"wrap.h"', `"ft_types_slist_${typename}.h"`, ...dependencies)}
 
 t_err\tft_types_slist_${typename}_unshift(
 \tt_ft_types_slist_${typename} *list,
